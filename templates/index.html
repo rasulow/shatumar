@@ -6,89 +6,36 @@
 	<section class="main-slider">
 		<div class="main-slider-carousel owl-carousel owl-theme">
 			
-			<!-- Slide One -->
-			<div class="slide">
-				<div class="image-layer" style="background-image: url('{% static "images/main-slider/image-1.jpg" %}')"></div>
-				<div class="auto-container">
-					
-					<!-- Content Column -->
-					<div class="content-box">
-						<div class="box-inner">
-							<div class="vector-icon" style="margin: 40px; height: 150px; background-image: url('{% static "images/main-slider/bubbles.png" %}')"></div>
-							<div class="vector-icon-three" style="background-image: url('{% static "images/main-slider/vector-3.png" %}')"></div>
-							<div class="sale-box">
-								SALE
-								<span>30<i>% OFF</i></span>
+			<!-- Banner Section -->
+				{% for banner in banners %}
+					<div class="slide">
+						<div class="image-layer" style="background-image: url('{{ banner.img.url }}')"></div>
+						<div class="auto-container">
+							
+							<!-- Content Column -->
+							<div class="content-box">
+								<div class="box-inner">
+									<div class="vector-icon" style="margin: 40px; height: 150px; background-image: url('{% static "images/main-slider/bubbles.png" %}')"></div>
+									<div class="vector-icon-three" style="background-image: url('{% static "images/main-slider/vector-3.png" %}')"></div>
+									<div class="sale-box">
+										SALE
+										<span>30<i>% OFF</i></span>
+									</div>
+									<div class="title">2024 Collection</div>
+									<h1>Shatumar <br> Collection1</h1>
+									<div class="price">Starting From <span>$560.99</span></div>
+									<a href="shop-detail.html" class="shop-now">Shop Now</a>
+									<!-- Arrival Box -->
+									<a href="shop.html" class="arrival-box">New Arrival</a>
+									<!-- Arrival Box -->
+								</div>
 							</div>
-							<div class="title">2024 Collection</div>
-							<h1>Shatumar <br> Collection1</h1>
-							<div class="price">Starting From <span>$560.99</span></div>
-							<a href="shop-detail.html" class="shop-now">Shop Now</a>
-							<!-- Arrival Box -->
-							<a href="shop.html" class="arrival-box">New Arrival</a>
-							<!-- Arrival Box -->
+							
 						</div>
 					</div>
-					
-				</div>
-			</div>
-			<!-- End Slide One -->
-			
-			<!-- Slide One -->
-			<div class="slide">
-				<div class="image-layer" style="background-image: url('{% static "images/main-slider/image-1.jpg" %}')"></div>
-				<div class="auto-container">
-					
-					<!-- Content Column -->
-					<div class="content-box">
-						<div class="box-inner">
-							<div class="vector-icon" style="margin: 40px; height: 150px; background-image: url('{% static "images/main-slider/bubbles.png" %}')"></div>
-							<div class="vector-icon-three" style="background-image: url('{% static "images/main-slider/vector-3.png" %}')"></div>
-							<div class="sale-box">
-								SALE
-								<span>30<i>% OFF</i></span>
-							</div>
-							<div class="title">2024 Collection</div>
-							<h1>Shatumar <br> Collection2</h1>
-							<div class="price">Starting From <span>$560.99</span></div>
-							<a href="shop-detail.html" class="shop-now">Shop Now</a>
-							<!-- Arrival Box -->
-							<a href="shop.html" class="arrival-box">New Arrival</a>
-							<!-- Arrival Box -->
-						</div>
-					</div>
-					
-				</div>
-			</div>
-			<!-- End Slide One -->
-			
-			<!-- Slide One -->
-			<div class="slide">
-				<div class="image-layer" style="background-image: url('{% static "images/main-slider/image-1.jpg" %}')"></div>
-				<div class="auto-container">
-					
-					<!-- Content Column -->
-					<div class="content-box">
-						<div class="box-inner">
-							<div class="vector-icon" style="margin: 40px; height: 150px; background-image: url('{% static "images/main-slider/bubbles.png" %}')"></div>
-							<div class="vector-icon-three" style="background-image: url('{% static "images/main-slider/vector-3.png" %}')"></div>
-							<div class="sale-box">
-								SALE
-								<span>30<i>% OFF</i></span>
-							</div>
-							<div class="title">2024 Collection</div>
-							<h1>Shatumar <br> Collection3</h1>
-							<div class="price">Starting From <span>$560.99</span></div>
-							<a href="shop-detail.html" class="shop-now">Shop Now</a>
-							<!-- Arrival Box -->
-							<a href="shop.html" class="arrival-box">New Arrival</a>
-							<!-- Arrival Box -->
-						</div>
-					</div>
-					
-				</div>
-			</div>
-			<!-- End Slide One -->
+				{% endfor %}
+
+			<!-- End Banner Section -->
 			
 			
 		</div>
@@ -167,129 +114,30 @@
 			<div class="four-item-carousel owl-carousel owl-theme">
 				
 				<!-- Shop Item -->
-				<div class="shop-item">
-					<div class="inner-box">
-						<div class="image">
-							<a href="shop-detail.html"><img src="{% static 'images/resource/products/1.png' %}" alt="" /></a>
-						</div>
-						<div class="lower-content">
-							<h6><a href="shop-detail.html">masks 95 percent 0.3-μm <br> particles</a></h6>
-						</div>
-					</div>
-				</div>
-				
-				<!-- Shop Item -->
-				<div class="shop-item">
-					<div class="inner-box">
-						<div class="image">
-							<a href="shop-detail.html"><img src="{% static 'images/resource/products/1.png' %}" alt="" /></a>
-						</div>
-						<div class="lower-content">
-							<h6><a href="shop-detail.html">masks 95 percent 0.3-μm <br> particles</a></h6>
+				{% for product in products %}
+					<div class="shop-item">
+						<div class="inner-box">
+							<div class="image">
+								<!-- Ensure this path is correct and product.img.url is not empty -->
+								<a href="shop-detail.html"><img src="media/{{ product.img }}" 
+									style="width: 285px; height: 305px; object-fit: contain;"
+									/></a>
+								
+							</div>
+							<div class="lower-content text-center">
+								<h6><a href="#">{{ product.name }}</a></h6>
+							</div>
 						</div>
 					</div>
-				</div>
-				
-				<!-- Shop Item -->
-				<div class="shop-item">
-					<div class="inner-box">
-						<div class="image">
-							<a href="shop-detail.html"><img src="{% static 'images/resource/products/1.png' %}" alt="" /></a>
-						</div>
-						<div class="lower-content">
-							<h6><a href="shop-detail.html">masks 95 percent 0.3-μm <br> particles</a></h6>
-						</div>
-					</div>
-				</div>
-				
-				<!-- Shop Item -->
-				<div class="shop-item">
-					<div class="inner-box">
-						<div class="image">
-							<a href="shop-detail.html"><img src="{% static 'images/resource/products/1.png' %}" alt="" /></a>
-						</div>
-						<div class="lower-content">
-							<h6><a href="shop-detail.html">masks 95 percent 0.3-μm <br> particles</a></h6>
-						</div>
-					</div>
-				</div>
-				
-				<!-- Shop Item -->
-				<div class="shop-item">
-					<div class="inner-box">
-						<div class="image">
-							<a href="shop-detail.html"><img src="{% static 'images/resource/products/1.png' %}" alt="" /></a>
-						</div>
-						<div class="lower-content">
-							<h6><a href="shop-detail.html">masks 95 percent 0.3-μm <br> particles</a></h6>
-						</div>
-					</div>
-				</div>
-				
-				<!-- Shop Item -->
-				<div class="shop-item">
-					<div class="inner-box">
-						<div class="image">
-							<a href="shop-detail.html"><img src="{% static 'images/resource/products/1.png' %}" alt="" /></a>
-						</div>
-						<div class="lower-content">
-							<h6><a href="shop-detail.html">masks 95 percent 0.3-μm <br> particles</a></h6>
-						</div>
-					</div>
-				</div>
-				
-				<!-- Shop Item -->
-				<div class="shop-item">
-					<div class="inner-box">
-						<div class="image">
-							<a href="shop-detail.html"><img src="{% static 'images/resource/products/1.png' %}" alt="" /></a>
-						</div>
-						<div class="lower-content">
-							<h6><a href="shop-detail.html">masks 95 percent 0.3-μm <br> particles</a></h6>
-						</div>
-					</div>
-				</div>
+				{% endfor %}
+			
 				
 			</div>
 		</div>
 	</section>	
 	<!-- End Products Section -->
 	
-	<!-- Brand Section -->
-	<section class="brand-section">
-		<div class="outer-container">
-			<div class="animation_mode">
-				<!-- <h1>Design. <span>Brand</span>. <strong>Quality</strong></h1> -->
-				<img src="{% static 'images/shatumar.png' %}" alt="" style="height: 100px"/>
-				<img src="{% static 'images/shatumar.png' %}" alt="" style="height: 100px"/>
-				<img src="{% static 'images/shatumar.png' %}" alt="" style="height: 100px"/>
-				<img src="{% static 'images/shatumar.png' %}" alt="" style="height: 100px"/>
-				<img src="{% static 'images/shatumar.png' %}" alt="" style="height: 100px"/>
-				<img src="{% static 'images/shatumar.png' %}" alt="" style="height: 100px"/>
-				<img src="{% static 'images/shatumar.png' %}" alt="" style="height: 100px"/>
-				<img src="{% static 'images/shatumar.png' %}" alt="" style="height: 100px"/>
-				<img src="{% static 'images/shatumar.png' %}" alt="" style="height: 100px"/>
-				<img src="{% static 'images/shatumar.png' %}" alt="" style="height: 100px"/>
-				<!-- <img src="{% static 'images/icons/feature.png' %}" alt="" />
-				<img src="{% static 'images/icons/icon-2.png' %}" alt="" />
-				<h1>Design. <span>Brand</span>. <strong>Quality</strong></h1>
-				<img src="{% static 'images/icons/icon-1.png' %}" alt="" />
-				<img src="{% static 'images/icons/feature.png' %}" alt="" />
-				<img src="{% static 'images/icons/icon-2.png' %}" alt="" />
-				<h1>Design. <span>Brand</span>. <strong>Quality</strong></h1>
-				<img src="{% static 'images/icons/icon-1.png' %}" alt="" />
-				<img src="{% static 'images/icons/feature.png' %}" alt="" />
-				<img src="{% static 'images/icons/icon-2.png' %}" alt="" />
-				<h1>Design. <span>Brand</span>. <strong>Quality</strong></h1>
-				<img src="{% static 'images/icons/icon-1.png' %}" alt="" />
-				<img src="{% static 'images/icons/feature.png' %}" alt="" />
-				<img src="{% static 'images/icons/icon-2.png' %}" alt="" /> -->
-			</div>
-		</div>
-	</section>
-	<!-- End Brand Section -->
-	
-	
+
 	<!-- Products Section Two -->
 	<section class="products-section-two">
 		<div class="bottom-white-border"></div>
@@ -300,339 +148,31 @@
 			</div>
 			<div class="inner-container">
 				<div class="single-item-carousel owl-carousel owl-theme">
-					
-					<!-- Slide -->
-					<div class="slide">
-						<div class="row clearfix">
-						
-							<!-- Product Block Four -->
-							<div class="product-block-four col-lg-3 col-md-6 col-sm-6">
-								<div class="inner-box d-flex justify-content-between align-items-center flex-wrap">
-									<div class="image">
-										<img src="{% static 'images/resource/product-1.png' %}" alt="" />
-									</div>
-									<div class="content">
-										<h6><a href="shop-detail.html">Full Sleeve Cotton</a></h6>
-										<div class="total-products">(312 Product)</div>
-									</div>
-								</div>
-							</div>
+					{% for slide in categories %}
+						<!-- Slide -->
+						<div class="slide">
+							<div class="row clearfix">
 							
-							<!-- Product Block Four -->
-							<div class="product-block-four col-lg-3 col-md-6 col-sm-6">
-								<div class="inner-box d-flex justify-content-between align-items-center flex-wrap">
-									<div class="image">
-										<img src="{% static 'images/resource/product-2.png' %}" alt="" />
+								{% for category in slide %}
+									<!-- Product Block Four -->
+									<div class="product-block-four col-lg-3 col-md-6 col-sm-6">
+										<div class="inner-box d-flex align-items-center flex-wrap">
+											<div class="image">
+												<img src="{{ category.img.url }}" alt=""
+													style="width: 90px; height: 98px; object-fit: contain;"
+												/>
+											</div>
+											<div class="content">
+												<h6><a href="shop-detail.html">{{ category.name }}</a></h6>
+												<div class="total-products">{{ category.product_count }} sany</div>
+											</div>
+										</div>
 									</div>
-									<div class="content">
-										<h6><a href="shop-detail.html">Full Sleeve Cotton</a></h6>
-										<div class="total-products">(312 Product)</div>
-									</div>
-								</div>
+								{% endfor %}
+
 							</div>
-							
-							<!-- Product Block Four -->
-							<div class="product-block-four col-lg-3 col-md-6 col-sm-6">
-								<div class="inner-box d-flex justify-content-between align-items-center flex-wrap">
-									<div class="image">
-										<img src="{% static 'images/resource/product-3.png' %}" alt="" />
-									</div>
-									<div class="content">
-										<h6><a href="shop-detail.html">Monkey Red Caps</a></h6>
-										<div class="total-products">(213 Product)</div>
-									</div>
-								</div>
-							</div>
-							
-							<!-- Product Block Four -->
-							<div class="product-block-four col-lg-3 col-md-6 col-sm-6">
-								<div class="inner-box d-flex justify-content-between align-items-center flex-wrap">
-									<div class="image">
-										<img src="{% static 'images/resource/product-4.png' %}" alt="" />
-									</div>
-									<div class="content">
-										<h6><a href="shop-detail.html">Men,s Cotton Pant</a></h6>
-										<div class="total-products">(461 Product)</div>
-									</div>
-								</div>
-							</div>
-							
-							<!-- Product Block Four -->
-							<div class="product-block-four col-lg-3 col-md-6 col-sm-6">
-								<div class="inner-box d-flex justify-content-between align-items-center flex-wrap">
-									<div class="image">
-										<img src="{% static 'images/resource/product-5.png' %}" alt="" />
-									</div>
-									<div class="content">
-										<h6><a href="shop-detail.html">Full Sleeve Cotton</a></h6>
-										<div class="total-products">(312 Product)</div>
-									</div>
-								</div>
-							</div>
-							
-							<!-- Product Block Four -->
-							<div class="product-block-four col-lg-3 col-md-6 col-sm-6">
-								<div class="inner-box d-flex justify-content-between align-items-center flex-wrap">
-									<div class="image">
-										<img src="{% static 'images/resource/product-6.png' %}" alt="" />
-									</div>
-									<div class="content">
-										<h6><a href="shop-detail.html">Full Sleeve Cotton</a></h6>
-										<div class="total-products">(567 Product)</div>
-									</div>
-								</div>
-							</div>
-							
-							<!-- Product Block Four -->
-							<div class="product-block-four col-lg-3 col-md-6 col-sm-6">
-								<div class="inner-box d-flex justify-content-between align-items-center flex-wrap">
-									<div class="image">
-										<img src="{% static 'images/resource/product-7.png' %}" alt="" />
-									</div>
-									<div class="content">
-										<h6><a href="shop-detail.html">Monkey Red Caps</a></h6>
-										<div class="total-products">(213 Product)</div>
-									</div>
-								</div>
-							</div>
-							
-							<!-- Product Block Four -->
-							<div class="product-block-four col-lg-3 col-md-6 col-sm-6">
-								<div class="inner-box d-flex justify-content-between align-items-center flex-wrap">
-									<div class="image">
-										<img src="{% static 'images/resource/product-8.png' %}" alt="" />
-									</div>
-									<div class="content">
-										<h6><a href="shop-detail.html">Men,s Cotton Pant</a></h6>
-										<div class="total-products">(461 Product)</div>
-									</div>
-								</div>
-							</div>
-							
 						</div>
-					</div>
-					
-					<!-- Slide -->
-					<div class="slide">
-						<div class="row clearfix">
-						
-							<!-- Product Block Four -->
-							<div class="product-block-four col-lg-3 col-md-6 col-sm-6">
-								<div class="inner-box d-flex justify-content-between align-items-center flex-wrap">
-									<div class="image">
-										<img src="{% static 'images/resource/product-1.png' %}" alt="" />
-									</div>
-									<div class="content">
-										<h6><a href="shop-detail.html">Full Sleeve Cotton</a></h6>
-										<div class="total-products">(312 Product)</div>
-									</div>
-								</div>
-							</div>
-							
-							<!-- Product Block Four -->
-							<div class="product-block-four col-lg-3 col-md-6 col-sm-6">
-								<div class="inner-box d-flex justify-content-between align-items-center flex-wrap">
-									<div class="image">
-										<img src="{% static 'images/resource/product-2.png' %}" alt="" />
-									</div>
-									<div class="content">
-										<h6><a href="shop-detail.html">Full Sleeve Cotton</a></h6>
-										<div class="total-products">(312 Product)</div>
-									</div>
-								</div>
-							</div>
-							
-							<!-- Product Block Four -->
-							<div class="product-block-four col-lg-3 col-md-6 col-sm-6">
-								<div class="inner-box d-flex justify-content-between align-items-center flex-wrap">
-									<div class="image">
-										<img src="{% static 'images/resource/product-3.png' %}" alt="" />
-									</div>
-									<div class="content">
-										<h6><a href="shop-detail.html">Monkey Red Caps</a></h6>
-										<div class="total-products">(213 Product)</div>
-									</div>
-								</div>
-							</div>
-							
-							<!-- Product Block Four -->
-							<div class="product-block-four col-lg-3 col-md-6 col-sm-6">
-								<div class="inner-box d-flex justify-content-between align-items-center flex-wrap">
-									<div class="image">
-										<img src="{% static 'images/resource/product-4.png' %}" alt="" />
-									</div>
-									<div class="content">
-										<h6><a href="shop-detail.html">Men,s Cotton Pant</a></h6>
-										<div class="total-products">(461 Product)</div>
-									</div>
-								</div>
-							</div>
-							
-							<!-- Product Block Four -->
-							<div class="product-block-four col-lg-3 col-md-6 col-sm-6">
-								<div class="inner-box d-flex justify-content-between align-items-center flex-wrap">
-									<div class="image">
-										<img src="{% static 'images/resource/product-5.png' %}" alt="" />
-									</div>
-									<div class="content">
-										<h6><a href="shop-detail.html">Full Sleeve Cotton</a></h6>
-										<div class="total-products">(312 Product)</div>
-									</div>
-								</div>
-							</div>
-							
-							<!-- Product Block Four -->
-							<div class="product-block-four col-lg-3 col-md-6 col-sm-6">
-								<div class="inner-box d-flex justify-content-between align-items-center flex-wrap">
-									<div class="image">
-										<img src="{% static 'images/resource/product-6.png' %}" alt="" />
-									</div>
-									<div class="content">
-										<h6><a href="shop-detail.html">Full Sleeve Cotton</a></h6>
-										<div class="total-products">(567 Product)</div>
-									</div>
-								</div>
-							</div>
-							
-							<!-- Product Block Four -->
-							<div class="product-block-four col-lg-3 col-md-6 col-sm-6">
-								<div class="inner-box d-flex justify-content-between align-items-center flex-wrap">
-									<div class="image">
-										<img src="{% static 'images/resource/product-7.png' %}" alt="" />
-									</div>
-									<div class="content">
-										<h6><a href="shop-detail.html">Monkey Red Caps</a></h6>
-										<div class="total-products">(213 Product)</div>
-									</div>
-								</div>
-							</div>
-							
-							<!-- Product Block Four -->
-							<div class="product-block-four col-lg-3 col-md-6 col-sm-6">
-								<div class="inner-box d-flex justify-content-between align-items-center flex-wrap">
-									<div class="image">
-										<img src="{% static 'images/resource/product-8.png' %}" alt="" />
-									</div>
-									<div class="content">
-										<h6><a href="shop-detail.html">Men,s Cotton Pant</a></h6>
-										<div class="total-products">(461 Product)</div>
-									</div>
-								</div>
-							</div>
-							
-						</div>
-					</div>
-					
-					<!-- Slide -->
-					<div class="slide">
-						<div class="row clearfix">
-						
-							<!-- Product Block Four -->
-							<div class="product-block-four col-lg-3 col-md-6 col-sm-6">
-								<div class="inner-box d-flex justify-content-between align-items-center flex-wrap">
-									<div class="image">
-										<img src="{% static 'images/resource/product-1.png' %}" alt="" />
-									</div>
-									<div class="content">
-										<h6><a href="shop-detail.html">Full Sleeve Cotton</a></h6>
-										<div class="total-products">(312 Product)</div>
-									</div>
-								</div>
-							</div>
-							
-							<!-- Product Block Four -->
-							<div class="product-block-four col-lg-3 col-md-6 col-sm-6">
-								<div class="inner-box d-flex justify-content-between align-items-center flex-wrap">
-									<div class="image">
-										<img src="{% static 'images/resource/product-2.png' %}" alt="" />
-									</div>
-									<div class="content">
-										<h6><a href="shop-detail.html">Full Sleeve Cotton</a></h6>
-										<div class="total-products">(312 Product)</div>
-									</div>
-								</div>
-							</div>
-							
-							<!-- Product Block Four -->
-							<div class="product-block-four col-lg-3 col-md-6 col-sm-6">
-								<div class="inner-box d-flex justify-content-between align-items-center flex-wrap">
-									<div class="image">
-										<img src="{% static 'images/resource/product-3.png' %}" alt="" />
-									</div>
-									<div class="content">
-										<h6><a href="shop-detail.html">Monkey Red Caps</a></h6>
-										<div class="total-products">(213 Product)</div>
-									</div>
-								</div>
-							</div>
-							
-							<!-- Product Block Four -->
-							<div class="product-block-four col-lg-3 col-md-6 col-sm-6">
-								<div class="inner-box d-flex justify-content-between align-items-center flex-wrap">
-									<div class="image">
-										<img src="{% static 'images/resource/product-4.png' %}" alt="" />
-									</div>
-									<div class="content">
-										<h6><a href="shop-detail.html">Men,s Cotton Pant</a></h6>
-										<div class="total-products">(461 Product)</div>
-									</div>
-								</div>
-							</div>
-							
-							<!-- Product Block Four -->
-							<div class="product-block-four col-lg-3 col-md-6 col-sm-6">
-								<div class="inner-box d-flex justify-content-between align-items-center flex-wrap">
-									<div class="image">
-										<img src="{% static 'images/resource/product-5.png' %}" alt="" />
-									</div>
-									<div class="content">
-										<h6><a href="shop-detail.html">Full Sleeve Cotton</a></h6>
-										<div class="total-products">(312 Product)</div>
-									</div>
-								</div>
-							</div>
-							
-							<!-- Product Block Four -->
-							<div class="product-block-four col-lg-3 col-md-6 col-sm-6">
-								<div class="inner-box d-flex justify-content-between align-items-center flex-wrap">
-									<div class="image">
-										<img src="{% static 'images/resource/product-6.png' %}" alt="" />
-									</div>
-									<div class="content">
-										<h6><a href="shop-detail.html">Full Sleeve Cotton</a></h6>
-										<div class="total-products">(567 Product)</div>
-									</div>
-								</div>
-							</div>
-							
-							<!-- Product Block Four -->
-							<div class="product-block-four col-lg-3 col-md-6 col-sm-6">
-								<div class="inner-box d-flex justify-content-between align-items-center flex-wrap">
-									<div class="image">
-										<img src="{% static 'images/resource/product-7.png' %}" alt="" />
-									</div>
-									<div class="content">
-										<h6><a href="shop-detail.html">Monkey Red Caps</a></h6>
-										<div class="total-products">(213 Product)</div>
-									</div>
-								</div>
-							</div>
-							
-							<!-- Product Block Four -->
-							<div class="product-block-four col-lg-3 col-md-6 col-sm-6">
-								<div class="inner-box d-flex justify-content-between align-items-center flex-wrap">
-									<div class="image">
-										<img src="{% static 'images/resource/product-8.png' %}" alt="" />
-									</div>
-									<div class="content">
-										<h6><a href="shop-detail.html">Men,s Cotton Pant</a></h6>
-										<div class="total-products">(461 Product)</div>
-									</div>
-								</div>
-							</div>
-							
-						</div>
-					</div>
+					{% endfor %}
 					
 					
 				</div>
@@ -667,7 +207,7 @@
 						<!-- Counter Column -->
 						<div class="counter-block col-lg-6 col-md-6 col-sm-6">
 							<div class="inner-box d-flex align-items-center">
-								<div class="counter"><span class="odometer" data-count="12"></span>k</div>
+								<div class="counter"><span class="odometer" data-count="{{ products_count }}"></span>k</div>
 								<div class="counter-text">Furniture Product For Home</div>
 							</div>
 						</div>
@@ -922,66 +462,19 @@
 	<section class="gallery-section">
 		<div class="outer-container">
 			<div class="instagram-carousel owl-carousel owl-theme">
-				
+
 				<!-- Insta Gallery -->
-				<div class="insta-gallery">
-					<img src="{% static 'images/gallery/1.jpg' %}" alt="" />
-					<div class="overlay-box">
-						<div class="overlay-inner">
-							<a class="lightbox-image icon flaticon-instagram" href="{% static 'images/gallery/1.jpg' %}"></a>
+				{% for gallery in galleries %}
+					<div class="insta-gallery">
+						<img src="{{ gallery.img.url }}" alt="" />
+						<div class="overlay-box">
+							<div class="overlay-inner">
+								<a class="lightbox-image icon flaticon-instagram" href="{{ gallery.img.url }}"></a>
+							</div>
 						</div>
 					</div>
-				</div>
+				{% endfor %}
 				
-				<!-- Insta Gallery -->
-				<div class="insta-gallery">
-					<img src="{% static 'images/gallery/2.jpg' %}" alt="" />
-					<div class="overlay-box">
-						<div class="overlay-inner">
-							<a class="lightbox-image icon flaticon-instagram" href="{% static 'images/gallery/1.jpg' %}"></a>
-						</div>
-					</div>
-				</div>
-				
-				<!-- Insta Gallery -->
-				<div class="insta-gallery">
-					<img src="{% static 'images/gallery/3.jpg' %}" alt="" />
-					<div class="overlay-box">
-						<div class="overlay-inner">
-							<a class="lightbox-image icon flaticon-instagram" href="{% static 'images/gallery/3.jpg' %}"></a>
-						</div>
-					</div>
-				</div>
-				
-				<!-- Insta Gallery -->
-				<div class="insta-gallery">
-					<img src="{% static 'images/gallery/4.jpg' %}" alt="" />
-					<div class="overlay-box">
-						<div class="overlay-inner">
-							<a class="lightbox-image icon flaticon-instagram" href="{% static 'images/gallery/4.jpg' %}"></a>
-						</div>
-					</div>
-				</div>
-				
-				<!-- Insta Gallery -->
-				<div class="insta-gallery">
-					<img src="{% static 'images/gallery/5.jpg' %}" alt="" />
-					<div class="overlay-box">
-						<div class="overlay-inner">
-							<a class="lightbox-image icon flaticon-instagram" href="{% static 'images/gallery/5.jpg' %}"></a>
-						</div>
-					</div>
-				</div>
-				
-				<!-- Insta Gallery -->
-				<div class="insta-gallery">
-					<img src="{% static 'images/gallery/6.jpg' %}" alt="" />
-					<div class="overlay-box">
-						<div class="overlay-inner">
-							<a class="lightbox-image icon flaticon-instagram" href="{% static 'images/gallery/6.jpg' %}"></a>
-						</div>
-					</div>
-				</div>
 				
 			</div>
 		</div>

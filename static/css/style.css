@@ -10087,6 +10087,10 @@
 	position:relative;
 }
 
+.product-block-four .content{
+	margin-left: 20px;
+}
+
 .product-block-four .number{
 	position:absolute;
 	right:-15px;
@@ -10130,7 +10134,6 @@
 	position:relative;
 	font-size:var(--font-15);
 	color:var(--color-seventyone);
-	margin-top:var(--margin-top-5);
 }
 
 .logo a img {

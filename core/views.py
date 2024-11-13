@@ -105,3 +105,15 @@ class ProductDetailView(TemplateView):
 
 class ContactView(TemplateView):
     template_name = 'pages/contact.html'
+    
+    
+class AboutView(TemplateView):
+    template_name = 'pages/about.html'
+    
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        
+        galleries = cache.get_or_set('galleries', lambda: models.Gallery.objects.filter(is_active=True), 300)
+        context['galleries'] = galleries
+        
+        return context

@@ -22,7 +22,7 @@
                         <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
                             <ul class="navigation clearfix">
                                 <li><a href="{% url 'index' %}">Home</a></li>
-                                <li><a href="about.html">About</a></li>
+                                <li><a href="{% url 'about' %}">About</a></li>
                                 <li><a href="{% url 'products' %}">Products</a></li>
                                 <li><a href="{% url 'contact' %}">Contact us</a></li>
                                 
@@ -44,6 +44,16 @@
                         <div class="search-box-outer">
                             <div class="search-box-btn"><span class="flaticon-search-1"></span></div>
                         </div>
+
+                        <nav class="navbar">
+                            <a href=""></a>
+                            <select class="language-selector">
+                                <option value="en" selected>EN</option>
+                                <option value="tr">TK</option>
+                                <option value="de">RU</option>
+                            </select>
+                        </nav>
+                        
                     </div>
 
                     

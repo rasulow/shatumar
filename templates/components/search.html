@@ -3,10 +3,13 @@
 <div class="search-popup">
 	<div class="color-layer"></div>
 	<button class="close-search"><span class="fa fa-arrow-up"></span></button>
-	<form method="post" action="blog.html">
+	<form>
+		{% csrf_token %}
 		<div class="form-group">
-			<input type="search" name="search-field" value="" placeholder="Search Here" required="">
-			<button type="submit"><i class="fa fa-search"></i></button>
+			<input type="search" name="search" value="" placeholder="Search Here" required="">
+			<a href="{% url 'products' %}">
+				<button type="submit"><i class="fa fa-search"></i></button>
+			</a>
 		</div>
 	</form>
 </div>

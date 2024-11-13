@@ -36,128 +36,55 @@
                 
                 <div class="shops-outer">
                     <div class="row clearfix">
-                        
-                        <!-- Shop Item -->
-                        <div class="shop-item col-lg-4 col-md-4 col-sm-12">
-                            <div class="inner-box">
-                                <div class="image">
-                                    <a href="shop-detail.html"><img src="{% static 'images/resource/products/1.png' %}" alt="" /></a>
-                                </div>
-                                <div class="lower-content">
-                                    <h6 class="text-center"><a href="{% url 'product-detail' %}">masks 95 percent 0.3-μm particles</a></h6>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Shop Item -->
-                        <div class="shop-item col-lg-4 col-md-4 col-sm-12">
-                            <div class="inner-box">
-                                <div class="image">
-                                    <a href="shop-detail.html"><img src="{% static 'images/resource/products/1.png' %}" alt="" /></a>
-                                </div>
-                                <div class="lower-content">
-                                    <h6 class="text-center"><a href="{% url 'product-detail' %}">masks 95 percent 0.3-μm particles</a></h6>
+                        {% for product in products %}
+                            <!-- Shop Item -->
+                            <div class="shop-item col-lg-4 col-md-4 col-sm-12">
+                                <div class="inner-box">
+                                    <div class="image">
+                                        <a href="{% url 'product-detail' slug=product.slug %}"><img src="/media/{{ product.img }}" 
+                                            style="width: 305px; height: 285px; object-fit: contain"
+                                            alt="" 
+                                            />
+                                        </a>
+                                    </div>
+                                    <div class="lower-content">
+                                        <h6 class="text-center"><a href="{% url 'product-detail' slug=product.slug %}">{{ product.name }}</a></h6>
+                                    </div>
                                 </div>
                             </div>
-                        </div>
-                        
-                        <!-- Shop Item -->
-                        <div class="shop-item col-lg-4 col-md-4 col-sm-12">
-                            <div class="inner-box">
-                                <div class="image">
-                                    <a href="shop-detail.html"><img src="{% static 'images/resource/products/1.png' %}" alt="" /></a>
-                                </div>
-                                <div class="lower-content">
-                                    <h6 class="text-center"><a href="{% url 'product-detail' %}">masks 95 percent 0.3-μm particles</a></h6>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Shop Item -->
-                        <div class="shop-item col-lg-4 col-md-4 col-sm-12">
-                            <div class="inner-box">
-                                <div class="image">
-                                    <a href="shop-detail.html"><img src="{% static 'images/resource/products/1.png' %}" alt="" /></a>
-                                </div>
-                                <div class="lower-content">
-                                    <h6 class="text-center"><a href="{% url 'product-detail' %}">masks 95 percent 0.3-μm particles</a></h6>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Shop Item -->
-                        <div class="shop-item col-lg-4 col-md-4 col-sm-12">
-                            <div class="inner-box">
-                                <div class="image">
-                                    <a href="shop-detail.html"><img src="{% static 'images/resource/products/1.png' %}" alt="" /></a>
-                                </div>
-                                <div class="lower-content">
-                                    <h6 class="text-center"><a href="{% url 'product-detail' %}">masks 95 percent 0.3-μm particles</a></h6>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Shop Item -->
-                        <div class="shop-item col-lg-4 col-md-4 col-sm-12">
-                            <div class="inner-box">
-                                <div class="image">
-                                    <a href="shop-detail.html"><img src="{% static 'images/resource/products/1.png' %}" alt="" /></a>
-                                </div>
-                                <div class="lower-content">
-                                    <h6 class="text-center"><a href="{% url 'product-detail' %}">masks 95 percent 0.3-μm particles</a></h6>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Shop Item -->
-                        <div class="shop-item col-lg-4 col-md-4 col-sm-12">
-                            <div class="inner-box">
-                                <div class="image">
-                                    <a href="shop-detail.html"><img src="{% static 'images/resource/products/1.png' %}" alt="" /></a>
-                                </div>
-                                <div class="lower-content">
-                                    <h6 class="text-center"><a href="{% url 'product-detail' %}">masks 95 percent 0.3-μm particles</a></h6>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Shop Item -->
-                        <div class="shop-item col-lg-4 col-md-4 col-sm-12">
-                            <div class="inner-box">
-                                <div class="image">
-                                    <a href="shop-detail.html"><img src="{% static 'images/resource/products/1.png' %}" alt="" /></a>
-                                </div>
-                                <div class="lower-content">
-                                    <h6 class="text-center"><a href="{% url 'product-detail' %}">masks 95 percent 0.3-μm particles</a></h6>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Shop Item -->
-                        <div class="shop-item col-lg-4 col-md-4 col-sm-12">
-                            <div class="inner-box">
-                                <div class="image">
-                                    <a href="shop-detail.html"><img src="{% static 'images/resource/products/1.png' %}" alt="" /></a>
-                                </div>
-                                <div class="lower-content">
-                                    <h6 class="text-center"><a href="{% url 'product-detail' %}">masks 95 percent 0.3-μm particles</a></h6>
-                                </div>
-                            </div>
-                        </div>
-                        
-
-                        
-                        
+                        {% endfor %}
                         
                     </div>
                 
                     <!-- Styled Pagination -->
                     <ul class="styled-pagination text-center">
-                        <li class="next"><a href="#"><span class="fa fa-angle-double-left"></span></a></li>
-                        <li><a href="#" class="active">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li class="next"><a href="#"><span class="fa fa-angle-double-right"></span></a></li>
+                        <!-- Previous button -->
+                        {% if products.has_previous %}
+                            <li class="prev">
+                                <a href="?page={{ products.previous_page_number }}" aria-label="Previous" {% if not products.has_previous %}tabindex="-1" aria-disabled="true"{% endif %}>
+                                    <span class="fa fa-angle-double-left"></span>
+                                </a>
+                            </li>
+                        {% endif %}
+
+                        {% for num in products.paginator.page_range %}
+                            <li>
+                                <a href="?page={{ num }}" 
+                                    class="{% if products.number == num %}active{% endif %}"
+                                >
+                                    {{ num }}
+                                </a>
+                            </li>
+                        {% endfor %}
+
+                        <!-- Next button -->
+                        {% if products.has_next %}
+                            <li class="next">
+                                <a href="?page={{ products.next_page_number }}" aria-label="Next" {% if not products.has_next %}tabindex="-1" aria-disabled="true"{% endif %}>
+                                    <span class="fa fa-angle-double-right"></span>
+                                </a>
+                            </li>
+                        {% endif %}
                     </ul>
                     <!-- End Styled Pagination -->
                 
@@ -178,81 +105,15 @@
                             </div>
                             <!-- Category List -->
                             <ul class="category-list">
-                                <li><a href="#">Accessories <span>(8)</span></a></li>
-                                <li><a href="#">Air Filter <span>(5)</span></a></li>
-                                <li><a href="#">Body Engine <span>(5)</span></a></li>
-                                <li><a href="#">Brake Parts names <span>(7)</span></a></li>
-                                <li><a href="#">Computer <span>(1)</span></a></li>
-                                <li><a href="#">Cosmetics <span>(6)</span></a></li>
-                                <li><a href="#">Covid-19 <span>(2)</span></a></li>
-                                <li><a href="#">Electornics <span>(8)</span></a></li>
-                                <li><a href="#">Frame Sunglasses <span>(10)</span></a></li>
-                                <li><a href="#">Furniture <span>(7)</span></a></li>
+                                {% for category in categories %}
+                                    <li><a href="?category={{ category.slug }}">{{ category.name }} <span>({{ category.product_count }})</span></a></li>
+                                {% endfor %}
                             </ul>
                             
                         </div>
                     </div>
                     
                     
-                    <!-- Brands Widget -->
-                    <div class="sidebar-widget brands-widget">
-                        <div class="widget-content">
-                            <!-- Sidebar Title -->
-                            <div class="sidebar-title">
-                                <h6>Product Categories</h6>
-                            </div>
-                            
-                            <!-- Brands List -->
-                            <div class="brands-list">
-                                <form method="post" action="contact.html">
-                                    
-                                    <div class="form-group">
-                                        <div class="check-box">
-                                            <input type="checkbox" name="remember-password" id="type-1">
-                                            <label for="type-1">Samsung</label>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="form-group">
-                                        <div class="check-box">
-                                            <input type="checkbox" name="remember-password" id="type-2">
-                                            <label for="type-2">Oppo</label>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="form-group">
-                                        <div class="check-box">
-                                            <input type="checkbox" name="remember-password" id="type-3">
-                                            <label for="type-3">hewaui Galaxy</label>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="form-group">
-                                        <div class="check-box">
-                                            <input type="checkbox" name="remember-password" id="type-4">
-                                            <label for="type-4">Ryzen 3600</label>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="form-group">
-                                        <div class="check-box">
-                                            <input type="checkbox" name="remember-password" id="type-5">
-                                            <label for="type-5">intel</label>
-                                        </div>
-                                    </div>
-                                    
-                                    <div class="form-group">
-                                        <div class="check-box">
-                                            <input type="checkbox" name="remember-password" id="type-6">
-                                            <label for="type-6">Mobile Handset</label>
-                                        </div>
-                                    </div>
-                                    
-                                </form>
-                            </div>
-                            
-                        </div>
-                    </div>
 
                 </aside>
             </div>
@@ -260,75 +121,5 @@
         </div>
     </div>
 </div>
-
-<!-- Gallery Section -->
-<section class="gallery-section">
-    <div class="outer-container">
-        <div class="instagram-carousel owl-carousel owl-theme">
-            
-            <!-- Insta Gallery -->
-            <div class="insta-gallery">
-                <img src="images/gallery/1.jpg" alt="" />
-                <div class="overlay-box">
-                    <div class="overlay-inner">
-                        <a class="lightbox-image icon flaticon-instagram" href="images/gallery/1.jpg"></a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Insta Gallery -->
-            <div class="insta-gallery">
-                <img src="images/gallery/2.jpg" alt="" />
-                <div class="overlay-box">
-                    <div class="overlay-inner">
-                        <a class="lightbox-image icon flaticon-instagram" href="images/gallery/1.jpg"></a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Insta Gallery -->
-            <div class="insta-gallery">
-                <img src="images/gallery/3.jpg" alt="" />
-                <div class="overlay-box">
-                    <div class="overlay-inner">
-                        <a class="lightbox-image icon flaticon-instagram" href="images/gallery/3.jpg"></a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Insta Gallery -->
-            <div class="insta-gallery">
-                <img src="images/gallery/4.jpg" alt="" />
-                <div class="overlay-box">
-                    <div class="overlay-inner">
-                        <a class="lightbox-image icon flaticon-instagram" href="images/gallery/4.jpg"></a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Insta Gallery -->
-            <div class="insta-gallery">
-                <img src="images/gallery/5.jpg" alt="" />
-                <div class="overlay-box">
-                    <div class="overlay-inner">
-                        <a class="lightbox-image icon flaticon-instagram" href="images/gallery/5.jpg"></a>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Insta Gallery -->
-            <div class="insta-gallery">
-                <img src="images/gallery/6.jpg" alt="" />
-                <div class="overlay-box">
-                    <div class="overlay-inner">
-                        <a class="lightbox-image icon flaticon-instagram" href="images/gallery/6.jpg"></a>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-    </div>
-</section>
-<!-- End Gallery Section -->
     
 {% endblock content %}

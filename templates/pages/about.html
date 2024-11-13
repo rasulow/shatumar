@@ -151,56 +151,29 @@
 </section>
 <!-- End Sale Section Three -->
 
-<!-- Services Section Two -->
-<section class="services-section-two" style="margin-bottom: 100px;">
+<!-- Sponsors Section -->
+<section class="sponsors-section" style="margin-bottom: 100px;">
     <div class="auto-container">
         <div class="inner-container">
-            <div class="row clearfix">
-                
-                <!-- Service Block -->
-                <div class="service-block col-lg-4 col-md-6 col-sm-12">
-                    <div class="inner-box">
-                        <div class="image">
-                            <a href="shop-detail.html"><img src="{% static 'images/resource/service-2.png' %}" alt="" /></a>
-                        </div>
-                        <div class="lower-content">
-                            <h5><a href="shop-detail.html">Free Shipping</a></h5>
-                            <div class="text">We build and activate brands through cultural <br> str vision, and the power of emotion <br> across every</div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Service Block -->
-                <div class="service-block col-lg-4 col-md-6 col-sm-12">
-                    <div class="inner-box">
-                        <div class="image">
-                            <a href="shop-detail.html"><img src="{% static 'images/resource/service-1.png' %}" alt="" /></a>
-                        </div>
-                        <div class="lower-content">
-                            <h5><a href="shop-detail.html">24/7 Qualityful Support</a></h5>
-                            <div class="text">We build and activate brands through cultural <br> str vision, and the power of emotion <br> across every</div>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Service Block -->
-                <div class="service-block col-lg-4 col-md-6 col-sm-12">
-                    <div class="inner-box">
-                        <div class="image">
-                            <a href="shop-detail.html"><img src="{% static 'images/resource/service-2.png' %}"  alt="" /></a>
-                        </div>
-                        <div class="lower-content">
-                            <h5><a href="shop-detail.html">Easy Return Policy</a></h5>
-                            <div class="text">We build and activate brands through cultural <br> str vision, and the power of emotion <br> across every</div>
-                        </div>
-                    </div>
-                </div>
-                
+            <div class="sponsors-outer">
+                <!-- Sponsors Carousel -->
+                <ul class="sponsors-carousel owl-carousel owl-theme">
+                    {% for certificate in certificates %}
+                        <li class="slide-item">
+                            <figure class="image-box">
+                                <a href="{{ certificate.img.url }}" class="lightbox-image">
+                                    <img src="{{ certificate.img.url }}" alt="">
+                                </a>
+                            </figure>
+                        </li>
+                    {% endfor %}
+                    
+                </ul>
             </div>
         </div>
     </div>
 </section>
-<!-- End Services Section Two -->
+<!-- End Sponsors Section -->
 
 	
 {% endblock content %}

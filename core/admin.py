@@ -41,3 +41,9 @@ class GalleryAdmin(ModelAdmin):
     search_fields = ('title',)
     readonly_fields = ('created_at', 'updated_at')
     
+    
+@admin.register(models.Certificates)
+class CertificatesAdmin(ModelAdmin):
+    list_display = ('title', 'img', 'is_active', 'created_at', 'updated_at')
+    search_fields = ('title',)
+    readonly_fields = ('created_at', 'updated_at')

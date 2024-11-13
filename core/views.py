@@ -113,6 +113,9 @@ class AboutView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
         
+        certificates = cache.get_or_set('certificates', lambda: models.Certificates.objects.filter(is_active=True), 300)
+        context['certificates'] = certificates
+        
         galleries = cache.get_or_set('galleries', lambda: models.Gallery.objects.filter(is_active=True), 300)
         context['galleries'] = galleries
         

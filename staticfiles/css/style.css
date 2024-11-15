@@ -1298,15 +1298,6 @@
 	background-color:var(--color-thirteen);
 }
 
-.products-section-two .inner-container:before{
-	position:absolute;
-	content:'';
-	top:-1px;
-	z-index:1;
-	right:-1px;
-	bottom:-1px;
-	border:5px solid var(--white-color);
-}
 
 .product-block-two{
 	position:relative;
@@ -1383,15 +1374,6 @@
 	position:relative;
 }
 
-.counter-section .inner-container:before{
-	position:absolute;
-	content:'';
-	left: 105%;
-    top: 0px;
-    width: 850px;
-    height: 210px;
-    background-color: var(--color-thirteen);
-}
 
 .shipping-box{
 	position:relative;
@@ -1489,7 +1471,7 @@
 
 .collection-section .inner-container{
 	position:relative;
-	padding:20px 0px 20px 50px;
+	padding:0px 0px 20px 50px;
 	background-color:var(--color-sixteen);
 }
 

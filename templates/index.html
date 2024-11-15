@@ -9,7 +9,7 @@
 			<!-- Banner Section -->
 				{% for banner in banners %}
 					<div class="slide">
-						<div class="image-layer" style="background-image: url('{{ banner.img.url }}')"></div>
+						<div class="image-layer" style="background-image: url('{{ banner.img.url }}'); object-fit: contain;"></div>
 						<div class="auto-container">
 							
 							<!-- Content Column -->
@@ -17,9 +17,8 @@
 								<div class="box-inner">
 									<div class="vector-icon" style="margin: 40px; height: 150px; background-image: url('{% static "images/main-slider/bubbles.png" %}')"></div>
 									<div class="vector-icon-three" style="background-image: url('{% static "images/main-slider/vector-3.png" %}')"></div>
-									<div class="sale-box">
-										SALE
-										<span>30<i>% OFF</i></span>
+									<div class="sale-box" style="display: flex; justify-content: center;">
+										<img src="{% static 'images/shatumar.png' %}" style="width: 95px; height: 40px;object-fit: cover;">
 									</div>
 									<div class="title">2024 Collection</div>
 									<h1>Shatumar <br> Collection1</h1>
@@ -190,8 +189,7 @@
 				<!-- Shipping Box -->
 				<div class="shipping-box">
 					<div class="inner-box">
-						Free <span class="theme_color">Shipping</span>
-						<div class="order">On all Order</div>
+						<img src="{% static 'images/shatumar.png' %}" style="width: 170px; height: 100px;object-fit: cover;">
 					</div>
 				</div>
 				
@@ -208,7 +206,7 @@
 						<div class="counter-block col-lg-6 col-md-6 col-sm-6">
 							<div class="inner-box d-flex align-items-center">
 								<div class="counter"><span class="odometer" data-count="{{ products_count }}"></span>k</div>
-								<div class="counter-text">Furniture Product For Home</div>
+								<div class="counter-text">Detergent Products For Home</div>
 							</div>
 						</div>
 						
@@ -237,10 +235,10 @@
 				<div class="shape-layer" style="background-image: url('{% static "images/background/pattern-1.png" %}')"></div>
 				<div class="row clearfix">
 					<div class="title-column col-lg-6 col-md-12 col-sm-12">
-						<div class="title">2021 Collection</div>
-						<h2>mens Black Meta Sunglass</h2>
+						<div class="title">2024 Collection</div>
+						<h2 style="font-size: 60px">Shatumar Catalog</h2>
 						<div class="deals">Deals <span>35% Flat</span></div>
-						<a class="shop-now" href="shop-detail.html">Shop Now</a>
+						<a class="shop-now" href="{% static 'files/catalogue.pdf' %}">Show</a>
 						<!-- Arrow -->
 						<div class="arrow">
 							<img src="{% static 'images/icons/arrow-1.png' %}" alt="" />
@@ -249,10 +247,9 @@
 					<div class="image-column col-lg-6 col-md-12 col-sm-12">
 						<div class="image">
 							<div class="shadow-layer" style="background-image: url('{% static "images/icons/pattern-1.png" %}')"></div>
-							<img src="{% static 'images/resource/chair.png' %}" alt="" />
+							<img src="{% static 'images/collection.png' %}" alt="" style="max-width=288px; max-height: 323xp; object-fit: contain;"/>
 							<div class="price-tag">
-								99<sup>$</sup>
-								<span>103</span>
+								
 							</div>
 						</div>
 					</div>
@@ -270,18 +267,16 @@
 				<div class="sponsors-outer">
 					<!-- Sponsors Carousel -->
 					<ul class="sponsors-carousel owl-carousel owl-theme">
-						<li class="slide-item"><figure class="image-box"><a href="#"><img src="{% static 'images/clients/1.png' %}" alt=""></a></figure></li>
-						<li class="slide-item"><figure class="image-box"><a href="#"><img src="{% static 'images/clients/2.png' %}" alt=""></a></figure></li>
-						<li class="slide-item"><figure class="image-box"><a href="#"><img src="{% static 'images/clients/3.png' %}" alt=""></a></figure></li>
-						<li class="slide-item"><figure class="image-box"><a href="#"><img src="{% static 'images/clients/4.png' %}" alt=""></a></figure></li>
-						<li class="slide-item"><figure class="image-box"><a href="#"><img src="{% static 'images/clients/5.png' %}" alt=""></a></figure></li>
-						<li class="slide-item"><figure class="image-box"><a href="#"><img src="{% static 'images/clients/1.png' %}" alt=""></a></figure></li>
-						<li class="slide-item"><figure class="image-box"><a href="#"><img src="{% static 'images/clients/2.png' %}" alt=""></a></figure></li>
-						<li class="slide-item"><figure class="image-box"><a href="#"><img src="{% static 'images/clients/3.png' %}" alt=""></a></figure></li>
-						<li class="slide-item"><figure class="image-box"><a href="#"><img src="{% static 'images/clients/4.png' %}" alt=""></a></figure></li>
-						<li class="slide-item"><figure class="image-box"><a href="#"><img src="{% static 'images/clients/5.png' %}" alt=""></a></figure></li>
-						<li class="slide-item"><figure class="image-box"><a href="#"><img src="{% static 'images/clients/1.png' %}" alt=""></a></figure></li>
-						<li class="slide-item"><figure class="image-box"><a href="#"><img src="{% static 'images/clients/2.png' %}" alt=""></a></figure></li>
+						{% for certificate in certificates %}
+							<li class="slide-item">
+								<figure class="image-box">
+									<a href="{{ certificate.img.url }}" class="lightbox-image">
+										<img src="{{ certificate.img.url }}" alt="">
+									</a>
+								</figure>
+							</li>
+						{% endfor %}
+						
 					</ul>
 				</div>
 			</div>
@@ -289,83 +284,6 @@
 	</section>
 	<!-- End Sponsors Section -->
 	
-	<!-- News Section -->
-	<section class="news-section">
-		<div class="auto-container">
-			<div class="news-carousel owl-carousel owl-theme">
-			
-				<!-- News Block -->
-				<div class="news-block">
-					<div class="inner-box">
-						<div class="image">
-							<div class="tag">bedroom</div>
-							<a href="blog-detail.html"><img src="{% static 'images/resource/news-1.jpg' %}" alt="" /></a>
-						</div>
-						<div class="lower-content">
-							<div class="author">
-								<img src="{% static 'images/resource/author-1.jpg' %}" alt="" />
-							</div>
-							<h5><a href="blog-detail.html">10 Simple Practices That Will Help You furnis</a></h5>
-							<div class="info">By: <span>Alextian</span> <i>January 23,2022</i></div>
-						</div>
-					</div>
-				</div>
-				
-				<!-- News Block -->
-				<div class="news-block">
-					<div class="inner-box">
-						<div class="image">
-							<div class="tag">bedroom</div>
-							<a href="blog-detail.html"><img src="{% static 'images/resource/news-2.jpg' %}" alt="" /></a>
-						</div>
-						<div class="lower-content">
-							<div class="author">
-								<img src="{% static 'images/resource/author-1.jpg' %}" alt="" />
-							</div>
-							<h5><a href="blog-detail.html">10 Simple Practices That Will Help You furnis</a></h5>
-							<div class="info">By: <span>Alextian</span> <i>January 23,2022</i></div>
-						</div>
-					</div>
-				</div>
-				
-				<!-- News Block -->
-				<div class="news-block">
-					<div class="inner-box">
-						<div class="image">
-							<div class="tag">bedroom</div>
-							<a href="blog-detail.html"><img src="{% static 'images/resource/news-1.jpg' %}" alt="" /></a>
-						</div>
-						<div class="lower-content">
-							<div class="author">
-								<img src="{% static 'images/resource/author-1.jpg' %}" alt="" />
-							</div>
-							<h5><a href="blog-detail.html">10 Simple Practices That Will Help You furnis</a></h5>
-							<div class="info">By: <span>Alextian</span> <i>January 23,2022</i></div>
-						</div>
-					</div>
-				</div>
-				
-				<!-- News Block -->
-				<div class="news-block">
-					<div class="inner-box">
-						<div class="image">
-							<div class="tag">bedroom</div>
-							<a href="blog-detail.html"><img src="{% static 'images/resource/news-2.jpg' %}" alt="" /></a>
-						</div>
-						<div class="lower-content">
-							<div class="author">
-								<img src="{% static 'images/resource/author-1.jpg' %}" alt="" />
-							</div>
-							<h5><a href="blog-detail.html">10 Simple Practices That Will Help You furnis</a></h5>
-							<div class="info">By: <span>Alextian</span> <i>January 23,2022</i></div>
-						</div>
-					</div>
-				</div>
-				
-			</div>
-		</div>
-	</section>
-	<!-- End News Section -->
 	
 	<!-- Testimonial Section -->
 	<section class="testimonial-section">

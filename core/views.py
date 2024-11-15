@@ -10,36 +10,34 @@ class IndexView(TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
 
-        galleries = cache.get('galleries')
-        if not galleries:
-            galleries = models.Gallery.objects.filter(is_active=True)
-            cache.set('galleries', galleries, 300)
+        galleries = cache.get_or_set('galleries', 
+                                     lambda: models.Gallery.objects.filter(is_active=True), 
+                                     timeout=300)
         context['galleries'] = galleries
 
-        categories = cache.get('categories')
-        if not categories:
-            categories = models.Category.objects.all().annotate(product_count=Count('product'))
-            cache.set('categories', categories, 300)
+        categories = cache.get_or_set('categories', 
+                                      lambda: models.Category.objects.annotate(product_count=Count('product')), 
+                                      timeout=300)
         context['categories'] = [categories[i:i+8] for i in range(0, len(categories), 8)]
 
-        banners = cache.get('banners')
-        if not banners:
-            banners = models.Banner.objects.filter(is_active=True)
-            cache.set('banners', banners, 300)
+        banners = cache.get_or_set('banners', 
+                                   lambda: models.Banner.objects.filter(is_active=True), 
+                                   timeout=300)
         context['banners'] = banners
 
-        products = cache.get('products')
-        if not products:
-            products = models.Product.objects.all().annotate(
-                img=Subquery(
-                    models.ProductImage.objects.filter(
-                        product=OuterRef('id')
-                    ).values('img')[:1]
-                )
-            )
-            cache.set('products', products, 300)
+        products = cache.get_or_set('products', 
+                                    lambda: models.Product.objects.all().annotate(
+                                        img=Subquery(
+                                            models.ProductImage.objects.filter(product=OuterRef('id'))
+                                            .values('img')[:1]
+                                        )
+                                    ), 
+                                    timeout=300)
         context['products'] = products
         context['products_count'] = products.count()
+        
+        certificates = cache.get_or_set('certificates', lambda: models.Certificates.objects.filter(is_active=True), 300)
+        context['certificates'] = certificates
 
         return context
 

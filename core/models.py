@@ -1,5 +1,8 @@
 from django.db import models
 from django.urls import reverse
+from PIL import Image
+from django.core.files.base import ContentFile
+import io
 
 
 class Category(models.Model):
@@ -12,6 +15,30 @@ class Category(models.Model):
     
     def __str__(self):
         return self.name
+    
+    def img_size(self):
+        if self.img and hasattr(self.img, 'size'):
+            return f"{self.img.size / 1024:.2f} KB"
+        return 0
+    
+    def save(self, *args, **kwargs):
+        if self.img:
+            img = Image.open(self.img)
+            
+
+            max_width = 1024
+            if img.width > max_width:
+                ratio = max_width / float(img.width)
+                new_height = int((float(img.height) * float(ratio)))
+                img = img.resize((max_width, new_height), Image.Resampling.LANCZOS)  # Updated resampling method
+
+            img_io = io.BytesIO()
+            img.save(img_io, format='jpg', quality=85)
+            img_content = ContentFile(img_io.getvalue(), self.img.name)
+
+            self.img.save(self.img.name, img_content, save=False)
+
+        super().save(*args, **kwargs)
     
     def get_absolute_url(self):
         return reverse('category_detail', kwargs={'slug': self.slug})
@@ -71,6 +98,30 @@ class Banner(models.Model):
     def __str__(self):
         return self.title if self.title else f"Banner {self.id}"
     
+    
+    def img_size(self):
+        if self.img and hasattr(self.img, 'size'):
+            return f"{self.img.size / 1024:.2f} KB"
+        return 0
+    
+    def save(self, *args, **kwargs):
+        if self.img:
+            img = Image.open(self.img)
+
+            max_width = 1024
+            if img.width > max_width:
+                ratio = max_width / float(img.width)
+                new_height = int((float(img.height) * float(ratio)))
+                img = img.resize((max_width, new_height), Image.Resampling.LANCZOS)  # Updated resampling method
+
+            img_io = io.BytesIO()
+            img.save(img_io, format='JPEG', quality=85)
+            img_content = ContentFile(img_io.getvalue(), self.img.name)
+
+            self.img.save(self.img.name, img_content, save=False)
+
+        super().save(*args, **kwargs)
+    
     class Meta:
         verbose_name = 'Banner'
         verbose_name_plural = 'Banners'
@@ -86,6 +137,29 @@ class Gallery(models.Model):
     
     def __str__(self):
         return self.title if self.title else f"Gallery {self.id}"
+    
+    def img_size(self):
+        if self.img and hasattr(self.img, 'size'):
+            return f"{self.img.size / 1024:.2f} KB"
+        return 0
+    
+    def save(self, *args, **kwargs):
+        if self.img:
+            img = Image.open(self.img)
+
+            max_width = 1024
+            if img.width > max_width:
+                ratio = max_width / float(img.width)
+                new_height = int((float(img.height) * float(ratio)))
+                img = img.resize((max_width, new_height), Image.Resampling.LANCZOS)  # Updated resampling method
+
+            img_io = io.BytesIO()
+            img.save(img_io, format='JPEG', quality=85)
+            img_content = ContentFile(img_io.getvalue(), self.img.name)
+
+            self.img.save(self.img.name, img_content, save=False)
+
+        super().save(*args, **kwargs)
     
     class Meta:
         verbose_name = 'Gallery'
@@ -103,6 +177,29 @@ class Certificates(models.Model):
     
     def __str__(self):
         return self.title if self.title else f"Certificate {self.id}"
+    
+    def img_size(self):
+        if self.img and hasattr(self.img, 'size'):
+            return f"{self.img.size / 1024:.2f} KB"
+        return 0
+    
+    def save(self, *args, **kwargs):
+        if self.img:
+            img = Image.open(self.img)
+
+            max_width = 1024
+            if img.width > max_width:
+                ratio = max_width / float(img.width)
+                new_height = int((float(img.height) * float(ratio)))
+                img = img.resize((max_width, new_height), Image.Resampling.LANCZOS)  # Updated resampling method
+
+            img_io = io.BytesIO()
+            img.save(img_io, format='JPEG', quality=85)
+            img_content = ContentFile(img_io.getvalue(), self.img.name)
+
+            self.img.save(self.img.name, img_content, save=False)
+
+        super().save(*args, **kwargs)
     
     class Meta:
         verbose_name = 'Certificate'

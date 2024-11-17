@@ -22,7 +22,7 @@
                         <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
                             <ul class="navigation clearfix">
                                 <!-- color:var(--main-color); -->
-                                <li><a href="{% url 'index' %}" style="{% if request.path == '/' %}color:var(--main-color);{% endif %}">Home</a></li>
+                                <li><a href="{% url 'index' %}" >Home</a></li>
                                 <li><a href="{% url 'about' %}" style="{% if request.path == '/about/' %}color:var(--main-color);{% endif %}">About</a></li>
                                 <li><a href="{% url 'products' %}" style="{% if request.path == '/products/' %}color:var(--main-color);{% endif %}">Products</a></li>
                                 <li><a href="{% url 'contact' %}" style="{% if request.path == '/contact/' %}color:var(--main-color);{% endif %}">Contact us</a></li>

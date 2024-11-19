@@ -1,5 +1,6 @@
 {% extends '__base.html' %}
 {% load static %}
+{% load i18n %}
 
 
 
@@ -110,7 +111,7 @@
 		<div class="auto-container">
 			<!-- Sec Title -->
 			<div class="sec-title">
-				<h4><span>Products</span></h4>
+				<h4><span>{% trans 'Products' %}</span></h4>
 			</div>
 			<div class="four-item-carousel owl-carousel owl-theme">
 				
@@ -120,7 +121,7 @@
 						<div class="inner-box">
 							<div class="image">
 								<!-- Ensure this path is correct and product.img.url is not empty -->
-								<a href="{% url 'product-detail' slug=product.slug %}"><img src="media/{{ product.img }}" 
+								<a href="{% url 'product-detail' slug=product.slug %}"><img src="/media/{{ product.img }}" 
 									style="width: 285px; height: 305px; object-fit: contain;"
 									/></a>
 								
@@ -145,7 +146,7 @@
 		<div class="auto-container">
 			<!-- Sec Title -->
 			<div class="sec-title centered">
-				<h4><span>Categories</span></h4>
+				<h4><span>{% trans 'Categories' %}</span></h4>
 			</div>
 			<div class="inner-container">
 				<div class="single-item-carousel owl-carousel owl-theme">
@@ -165,7 +166,7 @@
 											</div>
 											<div class="content">
 												<h6><a href="{% url 'products' %}?category={{ category.slug }}">{{ category.name }}</a></h6>
-												<div class="total-products">{{ category.product_count }} sany</div>
+												<div class="total-products">{{ category.product_count }} {% trans 'count' %}</div>
 											</div>
 										</div>
 									</div>
@@ -208,7 +209,7 @@
 						<div class="counter-block col-lg-6 col-md-6 col-sm-6">
 							<div class="inner-box d-flex align-items-center">
 								<div class="counter"><span class="odometer" data-count="{{ products_count }}"></span>k</div>
-								<div class="counter-text">Detergent Products For Home</div>
+								<div class="counter-text">{% trans 'Detergent Products For Home' %}</div>
 							</div>
 						</div>
 						
@@ -216,7 +217,7 @@
 						<div class="counter-block col-lg-6 col-md-6 col-sm-6">
 							<div class="inner-box d-flex align-items-center">
 								<div class="counter"><span class="odometer" data-count="120"></span>k</div>
-								<div class="counter-text">Our Satiesfiyed Clients</div>
+								<div class="counter-text">{% trans 'Our Satiesfiyed Clients' %}</div>
 							</div>
 						</div>
 						
@@ -237,10 +238,10 @@
 				<div class="shape-layer" style="background-image: url('{% static "images/background/pattern-1.png" %}')"></div>
 				<div class="row clearfix">
 					<div class="title-column col-lg-6 col-md-12 col-sm-12">
-						<div class="title">2024 Collection</div>
-						<h2 style="font-size: 60px">Shatumar Catalog</h2>
-						<div class="deals">Deals <span>35% Flat</span></div>
-						<a class="shop-now" href="{% static 'files/catalogue.pdf' %}">Show</a>
+						<div class="title">2024 {% trans 'Catalog' %}</div>
+						<h2 style="font-size: 60px">"Şatumar" {% trans 'Catalog' %}</h2>
+						<!-- <div class="deals">Deals <span>35% Flat</span></div> -->
+						<a class="shop-now" href="{% static 'files/catalogue.pdf' %}">{% trans "Show" %}</a>
 						<!-- Arrow -->
 						<div class="arrow">
 							<img src="{% static 'images/icons/arrow-1.png' %}" alt="" />

@@ -1,4 +1,5 @@
 {% load static %}
+{% load i18n %}
 
 <header class="main-header">
     	
@@ -22,10 +23,10 @@
                         <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
                             <ul class="navigation clearfix">
                                 <!-- color:var(--main-color); -->
-                                <li><a href="{% url 'index' %}" >Home</a></li>
-                                <li><a href="{% url 'about' %}" style="{% if request.path == '/about/' %}color:var(--main-color);{% endif %}">About</a></li>
-                                <li><a href="{% url 'products' %}" style="{% if request.path == '/products/' %}color:var(--main-color);{% endif %}">Products</a></li>
-                                <li><a href="{% url 'contact' %}" style="{% if request.path == '/contact/' %}color:var(--main-color);{% endif %}">Contact us</a></li>
+                                <li><a href="{% url 'index' %}" >{% trans "Home" %}</a></li>
+                                <li><a href="{% url 'about' %}" style="{% if request.path == '/about/' %}color:var(--main-color);{% endif %}">{% trans "About" %}</a></li>
+                                <li><a href="{% url 'products' %}" style="{% if request.path == '/products/' %}color:var(--main-color);{% endif %}">{% trans "Products" %}</a></li>
+                                <li><a href="{% url 'contact' %}" style="{% if request.path == '/contact/' %}color:var(--main-color);{% endif %}">{% trans "Contact us" %}</a></li>
                                 
                             </ul>
                         </div>
@@ -48,11 +49,15 @@
 
                         <nav class="navbar">
                             <a href=""></a>
-                            <select class="language-selector">
-                                <option value="en" selected>EN</option>
-                                <option value="tr">TK</option>
-                                <option value="de">RU</option>
-                            </select>
+                            <form action="{% url 'set_language' %}" method="post">
+                                {% csrf_token %}
+                                <select class="language-selector" name="language" onchange="this.form.submit()">
+                                    <option value="en" {% if LANGUAGE_CODE == 'en' %}selected{% endif %}>EN</option>
+                                    <option value="tk" {% if LANGUAGE_CODE == 'tk' %}selected{% endif %}>TK</option>
+                                    <option value="ru" {% if LANGUAGE_CODE == 'ru' %}selected{% endif %}>RU</option>
+                                </select>
+                                <input type="hidden" name="next" value="{{ request.path }}">
+                            </form>
                         </nav>
                         
                     </div>

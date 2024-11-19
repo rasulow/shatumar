@@ -1,13 +1,14 @@
 from django.db import models
 from django.urls import reverse
+from django.utils.translation import gettext_lazy as _
 from PIL import Image
 from django.core.files.base import ContentFile
 import io
 
 
 class Category(models.Model):
-    name = models.CharField(max_length=100)
-    description = models.TextField(blank=True, null=True)
+    name = models.CharField(max_length=100, verbose_name=_('Category'))
+    description = models.TextField(blank=True, null=True, verbose_name=_('Description'))
     img = models.ImageField(blank=True, null=True, upload_to='category_images/')
     slug = models.SlugField(max_length=255, unique=True)
     created_at = models.DateTimeField(auto_now_add=True)
@@ -33,7 +34,7 @@ class Category(models.Model):
                 img = img.resize((max_width, new_height), Image.Resampling.LANCZOS)  # Updated resampling method
 
             img_io = io.BytesIO()
-            img.save(img_io, format='jpg', quality=85)
+            img.save(img_io, format='png', quality=85)
             img_content = ContentFile(img_io.getvalue(), self.img.name)
 
             self.img.save(self.img.name, img_content, save=False)

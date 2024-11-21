@@ -695,7 +695,7 @@
 ***/
 
 body {
-	font-family:var(--font-family-Jost);
+	font-family: "Outfit", sans-serif;
 	font-size:14px;
 	color:var(--dark-color);
 	line-height:1.6em;
@@ -732,7 +732,7 @@ h1,h2,h3,h4,h5,h6 {
 	position:relative;
 	margin:0px;
 	background:none;
-	font-family: var(--font-family-Outfit);
+	font-family: "Outfit", sans-serif;
 }
 
 input,button,select,textarea{
@@ -757,7 +757,7 @@ p{
 	line-height:32px;
 	font-size:var(--font-16);
 	color:var(--color-two); 
-	font-family: var(--font-family-Outfit);
+	font-family: "Outfit", sans-serif;
 }
 
 /* Typography */
@@ -979,7 +979,7 @@ img{
 	font-size: var(--font-15);
 	text-transform: capitalize;
 	background-color:var(--main-color);
-	font-family: var(--font-family-Jost);
+	font-family: "Outfit", sans-serif;
 	background-color: var(--black-color);
 }
 
@@ -1016,7 +1016,7 @@ img{
 	font-size: var(--font-15);
 	text-transform: capitalize;
 	background-color:var(--main-color);
-	font-family: var(--font-family-Jost);
+	font-family: "Outfit", sans-serif;
 	background-color: var(--black-color);
 }
 
@@ -1069,7 +1069,7 @@ img{
 	color:var(--black-color);
 	text-transform:capitalize;
 	padding-left:var(--padding-left-20);
-	font-family: var(--font-family-Outfit);
+	font-family: "Outfit", sans-serif;
 }
 
 .sec-title h4 span{
@@ -1116,7 +1116,7 @@ img{
 	color:var(--color-fiftyfour);
 	padding: 0px 0px;
 	border:0px;
-	font-family:var(--font-family-Outfit);
+	font-family: "Outfit", sans-serif;
     background-color: var(--white-color);
 }
 

@@ -163,7 +163,7 @@
 	-ms-transition: all 1000ms ease;
 	-o-transition: all 1000ms ease;
 	transition: all 1000ms ease;
-	font-family:var(--font-family-Josefin);
+	font-family: "Outfit", sans-serif;
 	margin-bottom:var(--margin-bottom-30);
 }
 
@@ -189,7 +189,7 @@
 	-ms-transition: all 1000ms ease;
 	-o-transition: all 1000ms ease;
 	transition: all 1000ms ease;
-	font-family:var(--font-family-Josefin);
+	font-family: "Outfit", sans-serif;
 	margin-bottom:var(--margin-bottom-45);
 }
 
@@ -224,7 +224,7 @@
 	text-transform:uppercase;
 	display:inline-block;
 	padding-right:var(--padding-right-25);
-	font-family:var(--font-family-Jost);
+	font-family: "Outfit", sans-serif;
 }
 
 .main-slider .active .shop-now{
@@ -404,7 +404,7 @@
 	margin:12px 0px;
 	font-size:var(--font-15);
 	color:var(--black-color);
-	font-family: var(--font-family-Outfit);
+	font-family: "Outfit", sans-serif;
 }
 
 .main-slider .hover-box .hover-price{
@@ -739,7 +739,7 @@
 	color:var(--black-color);
 	text-transform:capitalize;
 	background-color:var(--white-color);
-	font-family: var(--font-family-Outfit);
+	font-family: "Outfit", sans-serif;
 	border:1px solid var(--color-seventyeight);
 }
 
@@ -811,7 +811,7 @@
 	font-size:var(--font-16);
 	text-transform:capitalize;
 	margin-top:var(--margin-top-10);
-	font-family: var(--font-family-Jost);
+	font-family: "Outfit", sans-serif;
 	margin-bottom:var(--margin-bottom-5);
 	padding-bottom:var(--padding-bottom-15);
 	border-bottom:1px solid rgba(var(--black-color-rgb), 0.06);
@@ -981,7 +981,7 @@
 	border-radius: 50px;
 	color:var(--black-color);
 	text-transform:uppercase;
-	font-family:var(--font-family-Inter);
+	font-family: "Outfit", sans-serif;
 	margin-bottom:var(--margin-bottom-5);
     border:1px solid rgba(var(--black-color-rgb), 0.06);
 }
@@ -1044,7 +1044,7 @@
 	display:inline-block;
 	font-size:var(--font-60);
 	color:rgba(var(--black-color-rgb), 0.15);
-	font-family: var(--font-family-Outfit);
+	font-family: "Outfit", sans-serif;
 }
 
 .brand-section span{
@@ -1054,7 +1054,7 @@
 	font-weight:600;
 	-webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgba(0, 0, 0, 0.20);
-	font-family:var(--font-family-Roboto);
+	font-family: "Outfit", sans-serif;
 }
 
 .brand-section strong{
@@ -1137,7 +1137,7 @@
 	font-weight:500;
 	line-height:31px;
 	margin-top:var(--margin-top-15);
-	font-family: var(--font-family-Outfit);
+	font-family: "Outfit", sans-serif;
 }
 
 .sale-block h5 a{
@@ -1156,7 +1156,7 @@
 	color:var(--white-color);
 	text-transform:capitalize;
 	margin-top:var(--margin-top-15);
-	font-family:var(--font-family-Jost);
+	font-family: "Outfit", sans-serif;
 	padding-right:var(--padding-right-25);
 }
 
@@ -1288,16 +1288,6 @@
 	background-color:var(--white-color);
 }
 
-.products-section-two .inner-container:after{
-	position:absolute;
-	content:'';
-	right:105%;
-	top:0px;
-	width:850px;
-	height:210px;
-	background-color:var(--color-thirteen);
-}
-
 
 .product-block-two{
 	position:relative;
@@ -1324,7 +1314,7 @@
 	font-size:var(--font-12);
 	color:var(--white-color); 
 	transform:rotateX(90deg);
-	font-family:var(--font-family-Jost);
+	font-family: "Outfit", sans-serif;
 	background-color:var(--black-color);
 	transition: all 600ms ease;
     -moz-transition: all 600ms ease;
@@ -1381,7 +1371,7 @@
 	height:192px;
 	font-weight:500;
 	text-align:center;
-	padding:65px 0px 30px;
+	padding-top: 40px;
 	font-size:var(--font-20);
 }
 
@@ -1415,7 +1405,7 @@
 	width:160px;
 	font-size:var(--font-70);
 	color:var(--color-fourteen);
-	font-family:var(--font-family-Josefin);
+	font-family: "Outfit", sans-serif;
 }
 
 .counter-section .counter-boxed .counter .odometer{
@@ -1429,7 +1419,7 @@
 	font-size:var(--font-16);
 	color:var(--color-fifteen);
 	margin-left:var(--margin-left-30);
-	font-family:var(--font-family-Inter);
+	font-family: "Outfit", sans-serif;
 }
 
 .counter-section .counter-boxed .counter:before{
@@ -1490,7 +1480,7 @@
 	color:var(--black-color);
 	text-transform:capitalize;
 	margin-top:var(--margin-top-10);
-	font-family:var(--font-family-Josefin);
+	font-family: "Outfit", sans-serif;
 }
 
 .collection-section .deals{
@@ -1511,11 +1501,11 @@
 	position: relative;
     font-weight: 500;
     display: inline-block;
-    font-size: var(--font-14);
+    font-size: var(--font-18);
     color: var(--black-color);
     text-transform: uppercase;
     margin-top: var(--margin-top-45);
-    font-family: var(--font-family-Jost);
+    font-family: "Outfit", sans-serif;
     padding-right: var(--padding-right-25);
 }
 
@@ -1576,7 +1566,7 @@
 	padding:20px 10px 10px;
 	font-size:var(--font-24);
 	color:var(--white-color);
-	font-family: var(--font-family-Roboto);
+	font-family: "Outfit", sans-serif;
 }
 
 .collection-section .price-tag:before{
@@ -1641,7 +1631,7 @@
 	text-transform:capitalize;
 	color:var(--color-seventeen);
 	margin-left:var(--margin-left-60);
-	font-family: var(--font-family-Jost);
+	font-family: "Outfit", sans-serif;
 	-webkit-transition:all 500ms ease;
 	-moz-transition:all 500ms ease;
 	-ms-transition:all 500ms ease;
@@ -1671,6 +1661,7 @@
 .sponsors-section{
 	position:relative;
 	padding:0px 0px 0px;
+	margin: 100px 0px;
 }
 
 .sponsors-section .inner-container{
@@ -1902,7 +1893,7 @@
 	font-size:var(--font-15);
 	color:var(--color-eightteen);
 	margin-top:var(--margin-top-20);
-	font-family: var(--font-family-Jost);
+	font-family: "Outfit", sans-serif;
 }
 
 .news-block .info span{
@@ -1941,7 +1932,7 @@
 
 .testimonial-section .pattern-layer-two{
 	position:absolute;
-	right:0px;
+	left: 95%;
 	bottom:0px;
 	width:149px;
 	height:111px;
@@ -2160,7 +2151,7 @@
 	font-size:var(--font-28);
 	margin-top:var(--margin-top-20);
 	margin-bottom:var(--margin-bottom-15);
-	font-family:var(--font-family-Jost);
+	font-family: "Outfit", sans-serif;
 }
 
 .testimonial-block .text span{
@@ -2374,7 +2365,7 @@
 	font-size:var(--font-24);
 	text-transform:uppercase;
 	background-color:var(--white-color);
-	font-family:var(--font-family-Jost);
+	font-family: "Outfit", sans-serif;
 	/* -webkit-animation: icon-bounce 0.8s ease-out infinite;
     animation: icon-bounce 0.8s ease-out infinite; */
 }
@@ -2425,7 +2416,7 @@
 	-ms-transition: all 1000ms ease;
 	-o-transition: all 1000ms ease;
 	transition: all 1000ms ease;
-	font-family:var(--font-family-Josefin);
+	font-family: "Outfit", sans-serif;
 	margin-bottom:var(--margin-bottom-15);
 }
 
@@ -2450,7 +2441,7 @@
 	-ms-transition: all 1000ms ease;
 	-o-transition: all 1000ms ease;
 	transition: all 1000ms ease;
-	font-family:var(--font-family-Jost);
+	font-family: "Outfit", sans-serif;
 	margin-bottom:var(--margin-bottom-30);
 }
 
@@ -2476,7 +2467,7 @@
 	-ms-transition: all 1000ms ease;
 	-o-transition: all 1000ms ease;
 	transition: all 1000ms ease;
-	font-family:var(--font-family-Josefin);
+	font-family: "Outfit", sans-serif;
 	margin-bottom:var(--margin-bottom-40);
 }
 
@@ -2598,7 +2589,7 @@
 	transform:translateY(-50%);
 	writing-mode: vertical-rl;
 	transform: rotate(180deg);
-	font-family:var(--font-family-Jost);
+	font-family: "Outfit", sans-serif;
 }
 
 /* Scroll Box */
@@ -2740,7 +2731,7 @@
 	color:var(--black-color);
 	margin-top:var(--margin-top-20);
 	margin-bottom:var(--margin-bottom-20);
-	font-family: var(--font-family-Outfit);
+	font-family: "Outfit", sans-serif;
 }
 
 .product-block-three .list{
@@ -2996,7 +2987,7 @@
 	margin:12px 0px;
 	font-size:var(--font-15);
 	color:var(--black-color);
-	font-family: var(--font-family-Outfit);
+	font-family: "Outfit", sans-serif;
 }
 
 .collection-section-two .hover-box .hover-price{
@@ -3038,7 +3029,7 @@
 	transform:translateY(-50%);
 	writing-mode: vertical-rl;
 	transform: rotate(180deg);
-	font-family:var(--font-family-Outfit);
+	font-family: "Outfit", sans-serif;
 }
 
 .products-section-five .purchase-box{
@@ -3238,7 +3229,7 @@
 	font-weight:600;
 	color:var(--color-twentyeight);
 	margin-top:var(--margin-top-30);
-	font-family:var(--font-family-Josefin);
+	font-family: "Outfit", sans-serif;
 }
 
 .services-section .content .numbers{
@@ -3327,7 +3318,7 @@
 
 .service-block h5{
 	font-weight:400;
-	font-family:var(--font-family-Josefin);
+	font-family: "Outfit", sans-serif;
 }
 
 .service-block h5 a{
@@ -3337,7 +3328,7 @@
 
 .service-block .text{
 	margin-top:var(--margin-top-15);
-	font-family:var(--font-family-Jost);
+	font-family: "Outfit", sans-serif;
 }
 
 /***
@@ -3400,7 +3391,7 @@
 	margin:0 auto;
 	font-size:var(--font-20);
 	color:var(--black-color);
-	font-family:var(--font-family-Jost);
+	font-family: "Outfit", sans-serif;
 	margin-bottom:var(--margin-bottom-20);
 }
 
@@ -3409,7 +3400,7 @@
 	font-weight:400;
 	font-size:var(--font-13);
 	color:var(--color-twentynine);
-	font-family:var(--font-family-Jost);
+	font-family: "Outfit", sans-serif;
 }
 
 .testimonial-block-two .designation span:before{
@@ -3426,7 +3417,7 @@
 	position:relative;
 	font-size:var(--font-16);
 	padding-right:var(--padding-right-30);
-	font-family:var(--font-family-Josefin);
+	font-family: "Outfit", sans-serif;
 }
 
 .testimonial-block-two .designation span:after{
@@ -3530,7 +3521,7 @@
 	font-size:var(--font-15);
 	color:var(--color-eightteen);
 	margin-top:var(--margin-top-20);
-	font-family: var(--font-family-Jost);
+	font-family: "Outfit", sans-serif;
 }
 
 .news-block-two .info span{
@@ -3552,7 +3543,7 @@
 	font-size:var(--font-16);
 	color:var(--color-eightteen);
 	margin-top:var(--margin-top-20);
-	font-family: var(--font-family-Jost);
+	font-family: "Outfit", sans-serif;
 	padding-right:var(--padding-right-25);
 }
 
@@ -3649,7 +3640,7 @@
 	-ms-transition: all 1000ms ease;
 	-o-transition: all 1000ms ease;
 	transition: all 1000ms ease;
-	font-family:var(--font-family-Inter);
+	font-family: "Outfit", sans-serif;
 	margin-bottom:var(--margin-bottom-20);
 }
 
@@ -3675,7 +3666,7 @@
 	-ms-transition: all 1000ms ease;
 	-o-transition: all 1000ms ease;
 	transition: all 1000ms ease;
-	font-family:var(--font-family-Josefin);
+	font-family: "Outfit", sans-serif;
 	margin-bottom:var(--margin-bottom-10);
 }
 
@@ -3700,7 +3691,7 @@
 	-ms-transition: all 1000ms ease;
 	-o-transition: all 1000ms ease;
 	transition: all 1000ms ease;
-	font-family:var(--font-family-Jost);
+	font-family: "Outfit", sans-serif;
 	margin-bottom:var(--margin-bottom-30);
 }
 
@@ -3726,7 +3717,7 @@
 	-ms-transition: all 1000ms ease;
 	-o-transition: all 1000ms ease;
 	transition: all 1000ms ease;
-	font-family:var(--font-family-Jost);
+	font-family: "Outfit", sans-serif;
 	margin-bottom:var(--margin-bottom-40);
 }
 
@@ -4026,7 +4017,7 @@
 
 .links-section .link-column h6{
 	font-weight:500;
-	font-family:var(--font-family-Jost);
+	font-family: "Outfit", sans-serif;
 	margin-bottom:var(--margin-bottom-20);
 }
 
@@ -4061,7 +4052,7 @@
 	color:var(--main-color);
 	font-size:var(--font-14);
 	padding-right:var(--padding-right-25);
-	font-family: var(--font-family-Outfit);
+	font-family: "Outfit", sans-serif;
 }
 
 .links-section .link-column .view-all:before{
@@ -4149,7 +4140,7 @@
 	font-size:var(--font-16);
 	text-transform:capitalize;
 	margin-top:var(--margin-top-10);
-	font-family: var(--font-family-Jost);
+	font-family: "Outfit", sans-serif;
 }
 
 .shop-item-two h6 a{
@@ -4498,7 +4489,7 @@
 	text-transform:capitalize;
 	color:var(--black-color);
 	border:1px solid #000000;
-	font-family:var(--font-family-Inter);
+	font-family: "Outfit", sans-serif;
 	margin-bottom:var(--margin-bottom-30);
 }
 
@@ -4513,9 +4504,9 @@
 
 .sale-section-two .text{
 	color:var(--color-twentyfour);
-	font-family:var(--font-family-Jost);
+	font-family: "Outfit", sans-serif;
 	margin-bottom:var(--margin-bottom-30);
-	font-family: var(--font-family-Outfit);
+	font-family: "Outfit", sans-serif;
 }
 
 .sale-section-two .shop-now{
@@ -4527,7 +4518,7 @@
 	color: var(--color-thirtyfour);
 	margin-top:var(--margin-top-40);
     padding-right: var(--padding-right-25);
-    font-family: var(--font-family-Outfit);
+    font-family: "Outfit", sans-serif;
 }
 
 .sale-section-two .shop-now:before{
@@ -4571,7 +4562,7 @@
 	padding:20px 10px 10px;
 	font-size:var(--font-24);
 	color:var(--white-color);
-	font-family: var(--font-family-Roboto);
+	font-family: "Outfit", sans-serif;
 }
 
 .sale-section-two .price-tag:before{
@@ -4743,7 +4734,7 @@
 	font-size:var(--font-15);
 	text-transform:capitalize;
 	margin-top:var(--margin-top-5);
-	font-family: var(--font-family-Jost);
+	font-family: "Outfit", sans-serif;
 	padding-bottom:var(--padding-bottom-5);
 	border-bottom:1px solid rgba(var(--black-color-rgb), 0.06);
 }
@@ -4946,7 +4937,7 @@
 	font-weight:500;
 	margin-top:var(--margin-top-10);
 	margin-bottom:var(--margin-bottom-10);
-	font-family:var(--font-family-Josefin);
+	font-family: "Outfit", sans-serif;
 }
 
 .tracker-block h5 a{
@@ -5039,7 +5030,7 @@
 	padding:20px 10px 10px;
 	font-size:var(--font-24);
 	color:var(--white-color);
-	font-family: var(--font-family-Roboto);
+	font-family: "Outfit", sans-serif;
 }
 
 .tracker-block .price-tag:before{
@@ -5131,7 +5122,7 @@
 	font-size:var(--font-28);
 	margin-top:var(--margin-top-20);
 	margin-bottom:var(--margin-bottom-15);
-	font-family:var(--font-family-Jost);
+	font-family: "Outfit", sans-serif;
 }
 
 .testimonial-section-three .text span{
@@ -5363,7 +5354,7 @@
 	font-size:var(--font-16);
 	color:var(--white-color);
 	text-transform:uppercase;
-	font-family:var(--font-family-Jost);
+	font-family: "Outfit", sans-serif;
 	background-color:var(--black-color);
 }
 
@@ -5408,14 +5399,14 @@
 	font-size:var(--font-13);
 	color:var(--color-twentynine);
 	margin-top:var(--margin-top-40);
-	font-family:var(--font-family-Jost);
+	font-family: "Outfit", sans-serif;
 }
 
 .newsletter-section .designation span{
 	position:relative;
 	font-size:var(--font-16);
 	padding-right:var(--padding-right-30);
-	font-family:var(--font-family-Josefin);
+	font-family: "Outfit", sans-serif;
 }
 
 .testimonial-block-two .designation span:after{
@@ -5693,7 +5684,7 @@
 	color:var(--black-color);
 	text-transform:capitalize;
 	padding-bottom:var(--padding-bottom-10);
-	font-family:var(--font-family-Josefin);
+	font-family: "Outfit", sans-serif;
 	border-bottom:1px solid rgba(var(--black-color-rgb), 0.08);
 }
 
@@ -5723,7 +5714,7 @@
 	display:block;
 	font-size:var(--font-16);
 	color:var(--color-thirtynine);
-	font-family: var(--font-family-Outfit);
+	font-family: "Outfit", sans-serif;
 }
 
 .category-list li a:hover{
@@ -6074,7 +6065,7 @@
 .shop-detail-section .content-column h3{
 	font-weight:600;
 	color:var(--black-color);
-	font-family:var(--font-family-Josefin);
+	font-family: "Outfit", sans-serif;
 }
 
 .shop-detail-section .content-column .text{
@@ -6424,7 +6415,7 @@
     font-size: var(--font-18);
     color: var(--color-fourtynine);
     margin-bottom:var(--margin-bottom-30);
-	font-family:var(--font-family-Jost);
+	font-family: "Outfit", sans-serif;
 }
 
 .prod-tabs .tabs-content .tab .title{
@@ -6505,7 +6496,7 @@
 	font-weight:500;
 	color:var(--black-color);
 	font-size:var(--font-16);
-	font-family: var(--font-family-Jost);
+	font-family: "Outfit", sans-serif;
 	margin-bottom:var(--margin-bottom-15);
 }
 
@@ -6671,7 +6662,7 @@
 .shop-detail-section .lower-box h3{
 	color:var(--color-twelve);
 	font-size:var(--font-28);
-	font-family:var(--font-family-Jost);
+	font-family: "Outfit", sans-serif;
 	margin-bottom:var(--margin-bottom-15);
 }
 
@@ -6689,7 +6680,7 @@
     color: var(--color-fourtynine);
 	padding-left:var(--padding-left-30);
 	margin-bottom:var(--margin-bottom-25);
-	font-family:var(--font-family-Jost);
+	font-family: "Outfit", sans-serif;
 }
 
 .shop-detail-section .list-one li:before{
@@ -6957,7 +6948,7 @@
 	font-size:var(--font-18);
 	color:var(--black-color);
 	margin-bottom:var(--margin-bottom-5);
-	font-family:var(--font-family-Josefin);
+	font-family: "Outfit", sans-serif;
 	border-bottom:1px solid rgba(var(--black-color-rgb), 0.06);
 }
 
@@ -7068,7 +7059,7 @@
 	font-size:var(--font-15);
 	color:var(--white-color);
 	background-color:var(--main-color);
-	font-family: var(--font-family-Outfit);
+	font-family: "Outfit", sans-serif;
 }
 
 /* Shipping Outer */
@@ -7102,7 +7093,7 @@
 	font-size:var(--font-16);
 	color:var(--black-color);
 	margin-bottom:var(--margin-bottom-5);
-	font-family: var(--font-family-Outfit);
+	font-family: "Outfit", sans-serif;
 	border-bottom:1px solid rgba(var(--black-color-rgb), 0.06);
 }
 
@@ -7334,7 +7325,7 @@
 	text-transform:uppercase;
 	color:var(--color-fiftythree);
 	margin-bottom:var(--margin-bottom-30);
-	font-family: var(--font-family-Outfit);
+	font-family: "Outfit", sans-serif;
 	border:1px solid rgba(var(--black-color-rgb), 0.07);
 }
 
@@ -7343,7 +7334,7 @@
 	right:25px;
 	font-weight:500;
 	color:var(--color-twelve);
-	font-family: var(--font-family-Outfit);
+	font-family: "Outfit", sans-serif;
 }
 
 .order-totals li:last-child{
@@ -7382,7 +7373,7 @@
 	-o-transition:all 500ms ease;
 	padding:10px 15px 10px 25px;
 	color:var(--color-fiftythree);
-	font-family: var(--font-family-Outfit);
+	font-family: "Outfit", sans-serif;
 	background-color:rgba(var(--white-color-rgb), 1);
 	border:1px solid rgba(var(--black-color-rgb), 0.07);
 }
@@ -7464,7 +7455,7 @@
 	font-weight:500;
 	color:var(--black-color);
 	margin-bottom:var(--margin-bottom-30);
-	font-family:var(--font-family-Josefin);
+	font-family: "Outfit", sans-serif;
 }
 
 .styled-form{
@@ -7580,7 +7571,7 @@
 	-ms-transition:all 300ms ease;
 	-o-transition:all 300ms ease;
 	-moz-transition:all 300ms ease;
-	font-family:var(--font-family-Inter);
+	font-family: "Outfit", sans-serif;
 }
 
 .checkout-section .styled-form input[type="text"],
@@ -7608,7 +7599,7 @@
 	font-weight:500;
 	border-radius:50px;
 	text-transform:capitalize;
-	font-family:var(--font-family-Inter);
+	font-family: "Outfit", sans-serif;
 }
 
 .styled-form textarea{
@@ -7654,7 +7645,7 @@
 	text-align:center;
 	display:inline-block;
 	background-color:var(--white-color);
-	font-family:var(--font-family-SpaceGrotesk);
+	font-family: "Outfit", sans-serif;
 }
 
 .about-section .experiance .counter{
@@ -7690,7 +7681,7 @@
 	font-size:var(--font-16);
 	color:var(--black-color);
 	background-color:var(--white-color);
-	font-family:var(--font-family-Outfit);
+	font-family: "Outfit", sans-serif;
 }
 
 .about-section .years-box span{
@@ -7717,14 +7708,14 @@
 	font-size:var(--font-14);
 	color:var(--black-color);
 	border:1px solid var(--black-color);
-	font-family:var(--font-family-Inter);
+	font-family: "Outfit", sans-serif;
 }
 
 .about-section h2{
 	font-weight:500;
 	margin-top:var(--margin-top-20);
 	color:var(--color-twentyeight);
-	font-family:var(--font-family-Jost);
+	font-family: "Outfit", sans-serif;
 }
 
 .about-section .text{
@@ -7733,7 +7724,7 @@
 	color:var(--color-fiftyfive);
 	margin-top:var(--margin-top-20);
 	margin-bottom:var(--margin-bottom-25);
-	font-family: var(--font-family-Outfit);
+	font-family: "Outfit", sans-serif;
 }
 
 .about-section .options{
@@ -7748,7 +7739,7 @@
 	color:var(--color-twentyfive);
 	padding-left:var(--padding-left-45);
 	margin-right:var(--margin-right-50);
-	font-family: var(--font-family-Outfit);
+	font-family: "Outfit", sans-serif;
 }
 
 .about-section .options li .icon{
@@ -7796,7 +7787,7 @@
 	color:var(--color-twentynine);
 	margin-top:var(--margin-top-20);
 	padding-top:var(--padding-top-20);
-	font-family:var(--font-family-Jost);
+	font-family: "Outfit", sans-serif;
 	border-top:1px solid rgba(var(--black-color-rgb), 0.10);
 }
 
@@ -7804,7 +7795,7 @@
 	position:relative;
 	font-size:var(--font-16);
 	padding-right:var(--padding-right-30);
-	font-family:var(--font-family-Josefin);
+	font-family: "Outfit", sans-serif;
 }
 
 .about-section .designation span:after{
@@ -7845,7 +7836,7 @@
 	font-size:var(--font-14);
 	color:var(--black-color);
 	border:1px solid var(--black-color);
-	font-family:var(--font-family-Inter);
+	font-family: "Outfit", sans-serif;
 }
 
 .sale-section-three .title-box h2{
@@ -7992,7 +7983,7 @@
 	-webkit-transition:all 500ms ease;
 	-ms-transition:all 500ms ease;
 	-o-transition:all 500ms ease;
-	font-family:var(--font-family-Jost);
+	font-family: "Outfit", sans-serif;
 	border:1px solid rgba(var(--black-color-rgb), 0.06);
 }
 
@@ -8037,7 +8028,7 @@
 	position:relative;
 	font-weight:400;
 	font-size:var(--font-18);
-	font-family:var(--font-family-Josefin);
+	font-family: "Outfit", sans-serif;
 	margin-bottom:var(--margin-bottom-25);
 }
 
@@ -8063,7 +8054,7 @@
 	font-size:var(--font-15);
 	text-transform:capitalize;
 	color:var(--color-fiftyeight);
-	font-family:var(--font-family-Inter);
+	font-family: "Outfit", sans-serif;
 	border:1px solid rgba(var(--black-color-rgb), 0.10);
 }
 
@@ -8103,7 +8094,7 @@
 	color:var(--white-color);
 	font-size:var(--font-10);
 	background-color:var(--color-fiftynine);
-	font-family:var(--font-family-Roboto);
+	font-family: "Outfit", sans-serif;
 }
 
 .post-widget .post:last-child{
@@ -8135,7 +8126,7 @@
 	font-size:var(--font-16);
 	margin-top:var(--margin-top-5);
 	margin-bottom: var(--margin-bottom-5);
-	font-family:var(--font-family-Josefin);
+	font-family: "Outfit", sans-serif;
 }
 
 .post-widget .post h6 a{
@@ -8159,7 +8150,7 @@
 	font-size: var(--font-12);
 	text-transform:uppercase;
 	color:var(--color-fiftynine);
-	font-family:var(--font-family-Roboto);
+	font-family: "Outfit", sans-serif;
 }
 
 /* Tweet Box */
@@ -8190,7 +8181,7 @@
 	font-size:var(--font-14);
 	color:var(--color-sixtyone);
 	margin-top:var(--margin-top-15);
-	font-family:var(--font-family-Inter);
+	font-family: "Outfit", sans-serif;
 }
 
 .tweet-box .tweet a{
@@ -8233,7 +8224,7 @@
 	-o-transition: all 300ms ease;
 	transition: all 300ms ease;
 	margin-bottom:var(--margin-bottom-20);
-	font-family:var(--font-family-Inter);
+	font-family: "Outfit", sans-serif;
 	border:2px solid rgba(var(--black-color-rgb), 0.03);
 }
 
@@ -8359,7 +8350,7 @@
 	text-transform:uppercase;
 	color: var(--white-color);
 	background:var(--black-color);
-	font-family:var(--font-family-Inter);
+	font-family: "Outfit", sans-serif;
 }
 
 .news-form .form-group .search-btn:hover{
@@ -8407,7 +8398,7 @@
 	font-size: var(--font-20);
 	color:var(--black-color);
 	background-color:var(--white-color);
-	font-family: var(--font-family-Outfit);
+	font-family: "Outfit", sans-serif;
 }
 
 .news-block-three .lower-content{
@@ -8426,7 +8417,7 @@
 	padding:3px 10px 2px;
 	font-size: var(--font-14);
 	color:var(--white-color);
-	font-family:var(--font-family-Roboto);
+	font-family: "Outfit", sans-serif;
 	background-color:var(--black-color);
 	margin-right:var(--margin-right-15);
 }
@@ -8682,7 +8673,7 @@
     font-size: var(--font-20);
     color: var(--black-color);
     background-color: var(--white-color);
-    font-family: var(--font-family-Outfit);
+    font-family: "Outfit", sans-serif;
 }
 
 .blog-detail .carousel-box{
@@ -8764,7 +8755,7 @@
     padding: 3px 10px 2px;
     font-size: var(--font-14);
     color: var(--white-color);
-    font-family: var(--font-family-Roboto);
+    font-family: "Outfit", sans-serif;
     background-color: var(--black-color);
     margin-right: var(--margin-right-15);
 }
@@ -8808,14 +8799,14 @@
 	margin:20px 0px;
 	font-size:var(--font-32);
 	color:var(--color-sixtyfour);
-	font-family:var(--font-family-Josefin);
+	font-family: "Outfit", sans-serif;
 }
 
 .blog-detail h4{
 	font-weight:600;
 	color:var(--color-twelve);
 	margin-bottom:var(--margin-bottom-15);
-	font-family:var(--font-family-Josefin);
+	font-family: "Outfit", sans-serif;
 }
 
 .blog-detail h5{
@@ -8840,7 +8831,7 @@
 	padding-left:var(--padding-left-25);
 	margin-right:var(--margin-right-15);
 	padding-right:var(--padding-right-15);
-	font-family: var(--font-family-Outfit);
+	font-family: "Outfit", sans-serif;
 	border-right:2px solid rgba(var(--black-color-rgb), 0.10);
 }
 
@@ -8881,7 +8872,7 @@
 .blog-detail p{
 	line-height:32px;
 	color:var(--color-fourtynine);
-	font-family:var(--font-family-Inter);
+	font-family: "Outfit", sans-serif;
 	margin-bottom:var(--margin-bottom-15);
 }
 
@@ -8896,7 +8887,7 @@
 	color:var(--color-twelve);
 	padding-left:var(--padding-left-25);
 	margin-bottom:var(--margin-bottom-15);
-	font-family:var(--font-family-Inter);
+	font-family: "Outfit", sans-serif;
 }
 
 .blog-detail .list-one li span{
@@ -8928,7 +8919,7 @@
 	margin-top:var(--margin-top-40);
 	margin-bottom:var(--margin-bottom-40);
 	border-left:4px solid var(--black-color);
-	font-family:var(--font-family-Josefin);
+	font-family: "Outfit", sans-serif;
 	background-color:rgba(var(--black-color-rgb), 0.05);
 }
 
@@ -8991,7 +8982,7 @@
 	padding:3px 10px 2px;
 	font-size: var(--font-14);
 	color:var(--white-color);
-	font-family:var(--font-family-Roboto);
+	font-family: "Outfit", sans-serif;
 	background-color:var(--black-color);
 }
 
@@ -9011,7 +9002,7 @@
 	color:var(--color-sixtynine);
 	margin-top:var(--margin-top-25);
 	margin-bottom:var(--margin-bottom-25);
-	font-family:var(--font-family-Roboto);
+	font-family: "Outfit", sans-serif;
 }
 
 /* Post Share Options */
@@ -9050,7 +9041,7 @@
 	font-size: var(--font-12);
 	color: var(--color-seventeen);
 	margin-right:var(--margin-right-10);
-	font-family:var(--font-family-Roboto);
+	font-family: "Outfit", sans-serif;
 	border:1px solid rgba(var(--black-color-rgb), 0.15);
 	
 	transition:all 500ms ease;
@@ -9141,7 +9132,7 @@
 	font-size:var(--font-14);
 	color:var(--color-sixtyfour);
 	margin-top:var(--margin-top-10);
-	font-family:var(--font-family-Roboto);
+	font-family: "Outfit", sans-serif;
 }
 
 .blog-detail .post-info .author{
@@ -9328,7 +9319,7 @@
 	text-transform:capitalize;
 	font-size:var(--font-18);
 	color:var(--color-twelve);
-	font-family:var(--font-family-Josefin);
+	font-family: "Outfit", sans-serif;
 }
 
 .sidebar-page-container .comments-area .comment-box .text{
@@ -9337,7 +9328,7 @@
 	font-size:var(--font-15);
 	color:var(--color-sixtynine);
 	margin-bottom:var(--margin-bottom-15);
-	font-family:var(--font-family-Roboto);
+	font-family: "Outfit", sans-serif;
 }
 
 .sidebar-page-container .comments-area .comment-info .comment-time{
@@ -9349,7 +9340,7 @@
 	text-transform:uppercase;
 	color:var(--color-seventeen);
 	margin-top:var(--margin-top-5);
-	font-family:var(--font-family-Roboto);
+	font-family: "Outfit", sans-serif;
 }
 
 .sidebar-page-container .comments-area .comment-box .reply-btn{
@@ -9402,7 +9393,7 @@
 	-o-transition:all 300ms ease;
 	-moz-transition:all 300ms ease;
 	transition:all 300ms ease;
-	font-family:var(--font-family-Inter);
+	font-family: "Outfit", sans-serif;
 	background-color:rgba(var(--black-color-rgb), 0.03);
 	border:1px solid rgba(var(--black-color-rgb), 0.06);
 }
@@ -9438,7 +9429,7 @@
 	-o-transition:all 300ms ease;
 	-moz-transition:all 300ms ease;
 	transition:all 300ms ease;
-	font-family:var(--font-family-Inter);
+	font-family: "Outfit", sans-serif;
 	background-color:rgba(var(--black-color-rgb), 0.03);
 	border:1px solid rgba(var(--black-color-rgb), 0.06);
 }
@@ -9469,7 +9460,7 @@
 	-ms-transition: all 300ms ease;
 	-o-transition: all 300ms ease;
 	transition: all 300ms ease;
-	font-family:var(--font-family-Inter);
+	font-family: "Outfit", sans-serif;
 }
 
 .comment-form .check-box input[type="checkbox"]:checked + label{
@@ -9703,7 +9694,7 @@
 	-moz-transition:all 500ms ease;
 	-webkit-transition:all 500ms ease;
 	padding:15px 30px 15px 20px;
-	font-family:var(--font-family-Josefin);
+	font-family: "Outfit", sans-serif;
 }
 
 .accordion-box .block .icon-outer{
@@ -9778,7 +9769,7 @@
 .accordion-box .block .content .text{
 	color:var(--color-fourtynine);
 	padding-top:var(--padding-top-15);
-	font-family:var(--font-family-Inter);
+	font-family: "Outfit", sans-serif;
 	border-top:1px solid rgba(var(--black-color-rgb), 0.10);
 }
 
@@ -9815,7 +9806,7 @@
 	font-weight:600;
 	font-size:var(--font-55);
 	margin-top:var(--margin-top-15);
-	font-family:var(--font-family-Josefin);
+	font-family: "Outfit", sans-serif;
 }
 
 .error-section .text{
@@ -9838,7 +9829,7 @@
 
 .contact-page-section{
 	position:relative;
-	padding:110px 0px 110px;
+	padding:115px 0px 115px;
 }
 
 .contact-page-section .info-column{
@@ -9883,7 +9874,7 @@
     font-size: var(--font-20);
     color: var(--black-color);
 	margin-bottom: var(--margin-bottom-5);
-	font-family:var(--font-family-Josefin);
+	font-family: "Outfit", sans-serif;
 }
 
 .contact-page-section .info-box a{
@@ -9932,7 +9923,7 @@
 
 .contact-page-section .title-box h3{
 	font-weight:500;
-	font-family:var(--font-family-Josefin);
+	font-family: "Outfit", sans-serif;
 }
 
 .contact-page-section .title-box .text{
@@ -10100,7 +10091,7 @@
 
 .product-block-four h6{
 	font-weight:400;
-	font-family:var(--font-family-Jost);
+	font-family: "Outfit", sans-serif;
 }
 
 .product-block-four h6 a{
@@ -10116,7 +10107,6 @@
 	position:relative;
 	font-size:var(--font-15);
 	color:var(--color-seventyone);
-	margin-top:var(--margin-top-5);
 }
 
 .logo a img {
@@ -10168,4 +10158,23 @@
 	to {
 		opacity: 0;
 	}
+}
+
+
+
+.navbar {
+	display: flex;
+	padding: 5px 10px;
+	justify-content: space-between;
+	align-content: center;
+}
+.navbar .language-selector {
+	background: transparent;
+	border: none;
+	color: black;
+	outline: none;
+}
+
+body {
+	font-family: "Outfit", sans-serif;
 }

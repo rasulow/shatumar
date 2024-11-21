@@ -224,7 +224,7 @@
 	-webkit-transition:all 500ms ease;
 	-ms-transition:all 500ms ease;
 	-o-transition:all 500ms ease;
-	font-family:var(--font-family-Jost);
+	font-family: "Outfit", sans-serif;
 }
 
 .main-header .main-menu .navigation > li:last-child{
@@ -521,7 +521,7 @@
 	font-weight:400;
 	color:var(--main-color);
 	font-size:var(--font-14);
-	font-family: var(--font-family-Outfit);
+	font-family: "Outfit", sans-serif;
 }
 
 .main-header .cart-box a:hover{
@@ -572,7 +572,7 @@
 	font-size: var(--font-8);
 	color:var(--white-color);
 	background-color:var(--black-color);
-	font-family: var(--font-family-Jost);
+	font-family: "Outfit", sans-serif;
 }
 
 /* Cart Box Two */
@@ -604,7 +604,7 @@
 	font-size: var(--font-8);
 	color:var(--white-color);
 	background-color:var(--black-color);
-	font-family: var(--font-family-Jost);
+	font-family: "Outfit", sans-serif;
 }
 
 /* Info List */
@@ -760,7 +760,7 @@
 	font-weight:400;
 	color:var(--black-color);
 	margin-bottom:var(--margin-bottom-10);
-	font-family:var(--font-family-Jost);
+	font-family:"Outfit", sans-serif;
 }
 
 .main-header .info-box:last-child{
@@ -858,7 +858,7 @@
 	color:var(--white-color);
 	font-size:var(--font-14);
 	text-transform:uppercase;
-	font-family:var(--font-family-Jost);
+	font-family:"Outfit", sans-serif;
 	background-color:var(--black-color);
 }
 
@@ -1054,7 +1054,7 @@
 	-webkit-transition:all 500ms ease;
 	-ms-transition:all 500ms ease;
 	-o-transition:all 500ms ease;
-	font-family: var(--font-family-Jost);
+	font-family: "Outfit", sans-serif;
 	border:1px solid rgba(var(--black-color-rgb), 0.06);
 }
 

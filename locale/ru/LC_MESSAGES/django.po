@@ -2138,3 +2138,15 @@ msgstr "Показать"
 msgid "count"
 msgstr "штук"
 
+msgid "New Product"
+msgstr "Новый продукт"
+
+msgid "mail"
+msgstr "Электронная почта"
+
+msgid "office"
+msgstr "Адрес офиса"
+
+msgid "phone"
+msgstr "Телефонные номера"
+

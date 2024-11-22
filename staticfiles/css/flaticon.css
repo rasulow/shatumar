@@ -754,3 +754,13 @@
 .flaticon-editing:before {
     content: "\f1f6";
 }
+
+.flaticon-water-bubble:before {
+    content: "\f1eb"; /* Example code for a water bubble */
+}
+.flaticon-bubble-floating:before {
+    content: "\f1ec"; /* Example for a floating bubble */
+}
+.flaticon-underwater-bubble:before {
+    content: "\f1ed"; /* Example for an underwater bubble */
+}

@@ -754,3 +754,7 @@
 .flaticon-editing:before {
     content: "\f1f6";
 }
+
+.fa-circle:before {
+    content: "\f111"; /* A simple circle could be used and styled like a bubble */
+}

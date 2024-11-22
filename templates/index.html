@@ -19,16 +19,15 @@
 							<div class="content-box">
 								<div class="box-inner">
 									<div class="vector-icon" style="margin: 40px; height: 150px; background-image: url('{% static "images/main-slider/bubbles.png" %}')"></div>
-									<div class="vector-icon-three" style="background-image: url('{% static "images/main-slider/vector-3.png" %}')"></div>
 									<div class="sale-box" style="display: flex; justify-content: center;">
 										<img src="{% static 'images/shatumar.png' %}" style="width: 95px; height: 40px;object-fit: cover;">
 									</div>
-									<div class="title">2024 Collection</div>
-									<h1>Shatumar <br> Collection1</h1>
+									<div class="title">2024 {% trans 'Catalog' %}</div>
+									<h1>{{ banner.title }}</h1>
 									<div class="price">Starting From <span>$560.99</span></div>
 									<a href="shop-detail.html" class="shop-now">Shop Now</a>
 									<!-- Arrival Box -->
-									<a href="shop.html" class="arrival-box">New Arrival</a>
+									<a href="shop.html" class="arrival-box">{% trans 'New Product' %}</a>
 									<!-- Arrival Box -->
 								</div>
 							</div>
@@ -184,6 +183,31 @@
 	</section>
 	<!-- End Products Section Two -->
 	
+	<!-- Brand Section -->
+	<section class="brand-section" style="margin: 100px 0px;">
+		<div class="outer-container">
+			<div class="animation_mode">
+				<img class='brands' src="{% static 'images/brands/ada.png' %}" alt="" />
+				<img class='brands' src="{% static 'images/brands/era.png' %}" alt="" />
+				<img class='brands' src="{% static 'images/brands/ses.png' %}" alt="" />
+				<img class='brands' src="{% static 'images/brands/sha.png' %}" alt="" />
+				<img class='brands' src="{% static 'images/shatumar.png' %}" alt="" />
+				<img class='brands' src="{% static 'images/brands/ada.png' %}" alt="" />
+				<img class='brands' src="{% static 'images/brands/era.png' %}" alt="" />
+				<img class='brands' src="{% static 'images/brands/ses.png' %}" alt="" />
+				<img class='brands' src="{% static 'images/brands/sha.png' %}" alt="" />
+				<img class='brands' src="{% static 'images/shatumar.png' %}" alt="" />
+				<img class='brands' src="{% static 'images/brands/ada.png' %}" alt="" />
+				<img class='brands' src="{% static 'images/brands/era.png' %}" alt="" />
+				<img class='brands' src="{% static 'images/brands/ses.png' %}" alt="" />
+				<img class='brands' src="{% static 'images/brands/sha.png' %}" alt="" />
+				<img class='brands' src="{% static 'images/shatumar.png' %}" alt="" />
+			</div>
+		</div>
+	</section>
+	<!-- End Brand Section -->
+
+
 	<!-- Counter Section -->
 	<section class="counter-section">
 		<div class="auto-container">
@@ -208,7 +232,7 @@
 						<!-- Counter Column -->
 						<div class="counter-block col-lg-6 col-md-6 col-sm-6">
 							<div class="inner-box d-flex align-items-center">
-								<div class="counter"><span class="odometer" data-count="{{ products_count }}"></span>k</div>
+								<div class="counter"><span class="odometer" data-count="{{ products_count }}"></span>000</div>
 								<div class="counter-text">{% trans 'Detergent Products For Home' %}</div>
 							</div>
 						</div>

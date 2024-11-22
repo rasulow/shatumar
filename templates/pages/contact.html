@@ -1,5 +1,6 @@
 {% extends '__base.html' %}
 {% load static %}
+{% load i18n %}
 
 
 {% block content %}
@@ -17,7 +18,7 @@
 							<div class="box-inner d-flex align-items-center">
 								<div class="icon flaticon-email-1"></div>
 								<div class="content">
-									<strong>Mail address</strong>
+									<strong style="font-weight: 600;">{% trans 'mail' %}</strong>
 									<a href="mailto:shatumar@gmail.com">shatumar@gmail.com</a><br>
 									<a href="tel:+99365656565">+99365656565</a>
 								</div>
@@ -29,7 +30,7 @@
 							<div class="box-inner d-flex align-items-center">
 								<div class="icon flaticon-map"></div>
 								<div class="content">
-									<strong>Office address</strong>
+									<strong style="font-weight: 600;">{% trans 'office' %}</strong>
 									<div class="text">1 nji Jaý Toplumy, Мары</div>
 								</div>
 							</div>
@@ -40,7 +41,7 @@
 							<div class="box-inner d-flex align-items-center">
 								<div class="icon flaticon-call"></div>
 								<div class="content">
-									<strong>Phone Number</strong>
+									<strong style="font-weight: 600;">{% trans 'phone' %}</strong>
 									<a href="tel:+99365656565">+99365656565</a><br>
 									<a href="tel:+99365656565">+99365656565</a>
 								</div>

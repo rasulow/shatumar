@@ -80,7 +80,7 @@
 
 .main-slider .content-box .box-inner{
 	position:relative;
-	padding:85px 60px;
+	padding:105px 60px;
 	max-width:650px;
 	width:100%;
 	background-color:var(--color-three);
@@ -248,7 +248,7 @@
 .main-slider .vector-icon{
 	position:absolute;
 	left:52%;
-	top:30%;
+	top:50%;
 	width:150px;
 	height:107px;
 	background-repeat:no-repeat;
@@ -484,7 +484,7 @@
     z-index: 10;
 	letter-spacing:1px;
 	color:var(--color-four);
-	font-size:var(--font-30);
+	font-size: var(--font-24);
     writing-mode: vertical-rl;
     transform: rotate(180deg);
 	padding-top:var(--padding-top-40);
@@ -1010,9 +1010,8 @@
 .brand-section .animation_mode{
 	position:relative;
 	min-height:115px;
-	/* width:400%;
 	-webkit-animation: marquee 32s linear infinite;
-	animation: marquee 32s linear infinite; */
+	animation: marquee 32s linear infinite;
 }
 
 .brand-section .outer-container{
@@ -1402,15 +1401,14 @@
 .counter-section .counter-boxed .counter{
 	position:relative;
 	font-weight:500;
-	width:160px;
 	font-size:var(--font-70);
 	color:var(--color-fourteen);
 	font-family: "Outfit", sans-serif;
+	width: 200px;
 }
 
 .counter-section .counter-boxed .counter .odometer{
 	top:-5px;
-	margin-right:var(--margin-right-10);
 }
 
 .counter-section .counter-boxed .counter-text{
@@ -10177,4 +10175,8 @@
 
 body {
 	font-family: "Outfit", sans-serif;
+}
+
+.brands {
+	height: 100px;
 }

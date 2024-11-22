@@ -2117,3 +2117,7 @@ msgstr ""
 
 msgid "Search"
 msgstr ""
+
+
+msgid "New Product"
+msgstr "New Product"

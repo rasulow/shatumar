@@ -2136,3 +2136,15 @@ msgstr "Görkez"
 
 msgid "count"
 msgstr "sany"
+
+msgid "New Product"
+msgstr "Täze haryt"
+
+msgid "mail"
+msgstr "Elektron poçta"
+
+msgid "office"
+msgstr "Kärhana salgysy"
+
+msgid "phone"
+msgstr "Telefon belgiler"

@@ -2121,3 +2121,27 @@ msgstr ""
 
 msgid "New Product"
 msgstr "New Product"
+
+
+msgid "Household chemicals"
+msgstr "Household chemicals"
+
+
+msgid "Since"
+msgstr "Since 2009"
+
+
+msgid "High quality"
+msgstr "High quality"
+
+msgid "Available price"
+msgstr "Available price"
+
+msgid "24/7 service"
+msgstr "24/7 service"
+
+msgid "Wide product range"
+msgstr "Wide product range"
+
+msgid "clean text"
+msgstr "Clean spaces spark clear minds – let every drop of your cleaning product create a brighter, healthier world."

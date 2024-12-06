@@ -2148,3 +2148,28 @@ msgstr "Kärhana salgysy"
 
 msgid "phone"
 msgstr "Telefon belgiler"
+
+
+msgid "Household chemicals"
+msgstr "Öý hojalygy üçin himiki arassalaýjy serişdeler"
+
+
+msgid "Since"
+msgstr "2009 - njy ýyldan bäri"
+
+
+msgid "High quality"
+msgstr "Ýokary hilli"
+
+msgid "Available price"
+msgstr "Elýeterli baha"
+
+msgid "24/7 service"
+msgstr "24/7 hyzmat"
+
+msgid "Wide product range"
+msgstr "Önümleriň giň görnüşi"
+
+
+msgid "clean text"
+msgstr "Arassa ýerler arassa aňlary döredýär - arassalaýyş önümiňiziň her damjasy has ýagty, sagdyn dünýä döredsin."

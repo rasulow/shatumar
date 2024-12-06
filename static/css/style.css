@@ -544,12 +544,13 @@
 
 .feature-block .inner-box{
 	position:relative;
-	padding:29px 35px;
-	border-right:1px solid rgba(var(--black-color-rgb), 0.06);
+	padding:29px 15px;
+	border-right:1px solid rgba(var(--black-color-rgb), 0.06);;
 }
 
 .feature-block .content{
 	position:relative;
+	bottom: 15px;
 	padding-left:var(--padding-left-60);
 }
 
@@ -579,9 +580,10 @@
 .feature-block strong{
 	position:relative;
 	display:block;
+	top: 15px;
 	font-weight:500;
 	color:var(--black-color);
-	font-size:var(--font-16);
+	font-size:var(--font-14);
 }
 
 .feature-block .text{
@@ -2254,7 +2256,7 @@
 	right:0px;
 	bottom:0px;
 	opacity:0.60;
-	background-color:var(--main-color);
+	background-color:#25D366;
 }
 
 .insta-gallery .overlay-inner{

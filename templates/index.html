@@ -22,9 +22,14 @@
 									<div class="sale-box" style="display: flex; justify-content: center;padding-top: 35px">
 										<img src="{% static 'images/shatumar.png' %}" style="width: 85px; height: 30px;object-fit: cover;">
 									</div>
-									<div class="title">2024 {% trans 'Catalog' %}</div>
+									<div class="title" style="max-width: 70%;text-transform: none">{% trans 'Household chemicals' %}</div>
 									<h1>{{ banner.title }}</h1>
-									<div class="price">Starting From <span>$560.99</span></div>
+									<div class="price">
+										{% trans "Since" %}
+										<!-- <span>
+											$560.99
+										</span> -->
+									</div>
 									<a href="shop-detail.html" class="shop-now">Shop Now</a>
 									<!-- Arrival Box -->
 									<a href="shop.html" class="arrival-box">{% trans 'New Product' %}</a>
@@ -58,8 +63,8 @@
 						<div class="inner-box">
 							<div class="content">
 								<div class="icon flaticon-fast"></div>
-								<strong>Free Shipping</strong>
-								<div class="text">Free shipping over $100</div>
+								<strong>{% trans "High quality" %}</strong>
+								<!-- <div class="text">Free shipping over $100</div> -->
 							</div>
 						</div>
 					</div>
@@ -69,8 +74,8 @@
 						<div class="inner-box">
 							<div class="content">
 								<div class="icon flaticon-padlock"></div>
-								<strong>Payment Secure</strong>
-								<div class="text">Got 100% Payment Safe</div>
+								<strong>{% trans "Available price" %}</strong>
+								<!-- <div class="text">Got 100% Payment Safe</div> -->
 							</div>
 						</div>
 					</div>
@@ -80,8 +85,8 @@
 						<div class="inner-box">
 							<div class="content">
 								<div class="icon flaticon-headphones-1"></div>
-								<strong>Support 24/7</strong>
-								<div class="text">Top quialty 24/7 Support</div>
+								<strong>{% trans "24/7 service" %}</strong>
+								<!-- <div class="text">Top quialty 24/7 Support</div> -->
 							</div>
 						</div>
 					</div>
@@ -91,8 +96,8 @@
 						<div class="inner-box">
 							<div class="content">
 								<div class="icon flaticon-headphones-1"></div>
-								<strong>Support 24/7</strong>
-								<div class="text">Top quialty 24/7 Support</div>
+								<strong>{% trans "Wide product range" %}</strong>
+								<!-- <div class="text">Top quialty 24/7 Support</div> -->
 							</div>
 						</div>
 					</div>
@@ -354,7 +359,7 @@
 											<span class="fa fa-star"></span>
 											<span class="fa fa-star"></span>
 										</div>
-										<div class="text">The most <span>advanced</span> revenue than this. I will refer everyone I know I like Level more and more each day because it makes my life a lot easier. It really saves me time and effort.</div>
+										<div class="text">{% trans "clean text" %}</div>
 										<div class="quote-icon flaticon-quote"></div>
 									</div>
 								</div>
@@ -392,7 +397,7 @@
 											<span class="fa fa-star"></span>
 											<span class="fa fa-star"></span>
 										</div>
-										<div class="text">The most <span>advanced</span> revenue than this. I will refer everyone I know I like Level more and more each day because it makes my life a lot easier. It really saves me time and effort.</div>
+										<div class="text">{% trans "clean text" %}</div>
 										<div class="quote-icon flaticon-quote"></div>
 									</div>
 								</div>

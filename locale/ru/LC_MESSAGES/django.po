@@ -2150,3 +2150,27 @@ msgstr "Адрес офиса"
 msgid "phone"
 msgstr "Телефонные номера"
 
+
+msgid "Household chemicals"
+msgstr "Химические средства очистки для домашнего хозяйства"
+
+
+msgid "Since"
+msgstr "С 2009 года"
+
+
+msgid "High quality"
+msgstr "Высокое качество"
+
+msgid "Available price"
+msgstr "Доступная цена"
+
+msgid "24/7 service"
+msgstr "24/7 обслуживание"
+
+msgid "Wide product range"
+msgstr "Широкий ассортимент"
+
+
+msgid "clean text"
+msgstr "Чистые помещения пробуждают ясность ума – пусть каждая капля вашего чистящего средства создаст более яркий и здоровый мир."

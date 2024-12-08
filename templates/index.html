@@ -52,7 +52,6 @@
 	
 	<!-- Featured Section -->
 	<section class="featured-section">
-		<div class="vector-layer" style="background-image: url('{% static "images/icons/feature.png" %}')"></div>
 		<div class="vector-layer-two" style="background-image: url('{% static "images/icons/feature.png" %}')"></div>
 		<div class="auto-container">
 			<div class="inner-container">
@@ -62,8 +61,8 @@
 					<div class="feature-block col-xl-3 col-lg-6 col-md-6 col-sm-12">
 						<div class="inner-box">
 							<div class="content">
-								<div class="icon flaticon-fast"></div>
-								<strong>{% trans "High quality" %}</strong>
+								<div class="icon flaticon-diamond"></div>
+								<strong><b>{% trans "High quality" %}</b></strong>
 								<!-- <div class="text">Free shipping over $100</div> -->
 							</div>
 						</div>
@@ -73,8 +72,8 @@
 					<div class="feature-block col-xl-3 col-lg-6 col-md-6 col-sm-12">
 						<div class="inner-box">
 							<div class="content">
-								<div class="icon flaticon-padlock"></div>
-								<strong>{% trans "Available price" %}</strong>
+								<div class="icon flaticon-tag"></div>
+								<strong><b>{% trans "Available price" %}</b></strong>
 								<!-- <div class="text">Got 100% Payment Safe</div> -->
 							</div>
 						</div>
@@ -85,7 +84,7 @@
 						<div class="inner-box">
 							<div class="content">
 								<div class="icon flaticon-headphones-1"></div>
-								<strong>{% trans "24/7 service" %}</strong>
+								<strong><b>{% trans "24/7 service" %}</b></strong>
 								<!-- <div class="text">Top quialty 24/7 Support</div> -->
 							</div>
 						</div>
@@ -95,8 +94,8 @@
 					<div class="feature-block col-xl-3 col-lg-6 col-md-6 col-sm-12">
 						<div class="inner-box">
 							<div class="content">
-								<div class="icon flaticon-headphones-1"></div>
-								<strong>{% trans "Wide product range" %}</strong>
+								<div class="icon flaticon-shield"></div>
+								<strong><b>{% trans "Wide product range" %}</b></strong>
 								<!-- <div class="text">Top quialty 24/7 Support</div> -->
 							</div>
 						</div>
@@ -192,21 +191,21 @@
 	<section class="brand-section" style="margin: 100px 0px;">
 		<div class="outer-container">
 			<div class="animation_mode">
-				<img class='brands' src="{% static 'images/brands/ada.png' %}" alt="" />
-				<img class='brands' src="{% static 'images/brands/era.png' %}" alt="" />
-				<img class='brands' src="{% static 'images/brands/ses.png' %}" alt="" />
-				<img class='brands' src="{% static 'images/brands/sha.png' %}" alt="" />
-				<img class='brands' src="{% static 'images/shatumar.png' %}" alt="" />
-				<img class='brands' src="{% static 'images/brands/ada.png' %}" alt="" />
-				<img class='brands' src="{% static 'images/brands/era.png' %}" alt="" />
-				<img class='brands' src="{% static 'images/brands/ses.png' %}" alt="" />
-				<img class='brands' src="{% static 'images/brands/sha.png' %}" alt="" />
-				<img class='brands' src="{% static 'images/shatumar.png' %}" alt="" />
-				<img class='brands' src="{% static 'images/brands/ada.png' %}" alt="" />
-				<img class='brands' src="{% static 'images/brands/era.png' %}" alt="" />
-				<img class='brands' src="{% static 'images/brands/ses.png' %}" alt="" />
-				<img class='brands' src="{% static 'images/brands/sha.png' %}" alt="" />
-				<img class='brands' src="{% static 'images/shatumar.png' %}" alt="" />
+				<a href="{% url 'products' %}?brand=ada"><img class='brands' src="{% static 'images/brands/ada.png' %}" alt="" /></a>
+				<a href="{% url 'products' %}?brand=era"><img class='brands' src="{% static 'images/brands/era.png' %}" alt="" /></a>
+				<a href="{% url 'products' %}?brand=ses"><img class='brands' src="{% static 'images/brands/ses.png' %}" alt="" /></a>
+				<a href="{% url 'products' %}?brand=sha"><img class='brands' src="{% static 'images/brands/sha.png' %}" alt="" /></a>
+				<a href="{% url 'products' %}?brand=shatumar"><img class='brands' src="{% static 'images/shatumar.png' %}" alt="" /></a>
+				<a href="{% url 'products' %}?brand=ada"><img class='brands' src="{% static 'images/brands/ada.png' %}" alt="" /></a>
+				<a href="{% url 'products' %}?brand=era"><img class='brands' src="{% static 'images/brands/era.png' %}" alt="" /></a>
+				<a href="{% url 'products' %}?brand=ses"><img class='brands' src="{% static 'images/brands/ses.png' %}" alt="" /></a>
+				<a href="{% url 'products' %}?brand=sha"><img class='brands' src="{% static 'images/brands/sha.png' %}" alt="" /></a>
+				<a href="{% url 'products' %}?brand=shatumar"><img class='brands' src="{% static 'images/shatumar.png' %}" alt="" /></a>
+				<a href="{% url 'products' %}?brand=ada"><img class='brands' src="{% static 'images/brands/ada.png' %}" alt="" /></a>
+				<a href="{% url 'products' %}?brand=era"><img class='brands' src="{% static 'images/brands/era.png' %}" alt="" /></a>
+				<a href="{% url 'products' %}?brand=ses"><img class='brands' src="{% static 'images/brands/ses.png' %}" alt="" /></a>
+				<a href="{% url 'products' %}?brand=sha"><img class='brands' src="{% static 'images/brands/sha.png' %}" alt="" /></a>
+				<a href="{% url 'products' %}?brand=shatumar"><img class='brands' src="{% static 'images/shatumar.png' %}" alt="" /></a>
 			</div>
 		</div>
 	</section>

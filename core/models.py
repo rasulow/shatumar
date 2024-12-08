@@ -50,13 +50,44 @@ class Category(models.Model):
         ordering = ['-created_at']
         
         
+        
+class Brand(models.Model):
+    name = models.CharField(max_length=100, verbose_name=_('Name'))
+    slug = models.SlugField(max_length=255, unique=True)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
 
+    def __str__(self):
+        return self.name
+    
+    class Meta:
+        verbose_name = 'Brand'
+        verbose_name_plural = 'Brands'
+        ordering = ['-created_at']
+        
+        
+class ProductSize(models.Model):
+    size = models.CharField(max_length=15)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+    
+    def __str__(self):
+        return self.size
+    
+    class Meta:
+        verbose_name = 'ProductSize'
+        verbose_name_plural = 'ProductSizes'
+        ordering = ['-created_at']
+    
+    
 class Product(models.Model):
     name = models.CharField(max_length=100, verbose_name=_('Name'))
     description = models.TextField(blank=True, null=True, verbose_name=_('Description'))
     slug = models.SlugField(max_length=255, unique=True)
     available = models.BooleanField(default=True)
     category = models.ForeignKey(Category, on_delete=models.CASCADE)
+    brand = models.ForeignKey(Brand, on_delete=models.CASCADE, blank=True, null=True)
+    size = models.ManyToManyField(ProductSize, blank=True, null=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
     
@@ -206,3 +237,5 @@ class Certificates(models.Model):
         verbose_name = 'Certificate'
         verbose_name_plural = 'Certificates'
         ordering = ['-created_at']
+        
+        

@@ -102,6 +102,35 @@
                         </div>
                     </div>
                     
+                    <!-- Brands Widget -->
+                    <div class="sidebar-widget-two tags-widget">
+                        <div class="widget-content">
+                            <!-- Sidebar Title -->
+                            <div class="sidebar-title">
+                                <h6>Brands</h6>
+                            </div>
+                            <ul class="tag-list">
+                                {% for brand in brands %}
+                                    <li><a href="?brand={{ brand.slug }}">{{ brand.name }}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <!-- Size Widget -->
+                    <div class="sidebar-widget-two tags-widget">
+                        <div class="widget-content">
+                            <!-- Sidebar Title -->
+                            <div class="sidebar-title">
+                                <h6>Size</h6>
+                            </div>
+                            <ul class="tag-list">
+                                {% for size in sizes %}
+                                    <li><a href="?size={{ size.size }}">{{ size.size }}</a></li>
+                                {% endfor %}
+                            </ul>
+                        </div>
+                    </div>
                     
 
                 </aside>

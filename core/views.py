@@ -48,6 +48,8 @@ class ProductsView(TemplateView):
         context = super().get_context_data(**kwargs)
         
         categories = cache.get_or_set('categories', lambda: models.Category.objects.all().annotate(product_count=Count('product')), 300)
+        brands = cache.get_or_set('brands', lambda: models.Brand.objects.all(), 300)
+        sizes = cache.get_or_set('sizes', lambda: models.ProductSize.objects.all(), 300)
         
         products = cache.get_or_set('products', lambda: models.Product.objects.all().select_related('category').annotate(
             img=Subquery(
@@ -58,8 +60,16 @@ class ProductsView(TemplateView):
         ), 300)
         
         category_slug = self.request.GET.get('category', None)
+        brand_slug = self.request.GET.get('brand', None)
+        size = self.request.GET.get('size', None)
         if category_slug:
             products = products.filter(category__slug=category_slug)
+            
+        if brand_slug:
+            products = products.filter(brand__slug=brand_slug)
+            
+        if size:
+            products = products.filter(size__size=size)
         
         
         search = self.request.GET.get('search', None)
@@ -74,6 +84,8 @@ class ProductsView(TemplateView):
             products_page = paginator.page(1 if not page_number else paginator.num_pages)
 
         context['categories'] = categories
+        context['brands'] = brands
+        context['sizes'] = sizes
         context['products'] = products_page
         
         galleries = cache.get_or_set('galleries', lambda: models.Gallery.objects.filter(is_active=True), 300)

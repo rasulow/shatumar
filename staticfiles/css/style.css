@@ -456,11 +456,11 @@
 
 .main-slider .owl-nav .owl-next{
 	position:relative;
-	width:85px;
+	/* width:85px;
 	height:70px;
 	line-height:70px;
 	text-align:center;
-	display:inline-block;
+	display:inline-block; */
 	font-size:var(--font-24);
 	color:var(--white-color);
 	font-family: "flaticon";
@@ -469,7 +469,7 @@
 	-webkit-transition:all 0.3s ease;
 	-ms-transition:all 0.3s ease;
 	-o-transition:all 0.3s ease;
-	background-color:var(--main-color);
+	/* background-color:var(--main-color); */
 }
 
 .main-slider .owl-nav .owl-prev:hover,

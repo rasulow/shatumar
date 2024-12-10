@@ -429,10 +429,8 @@
 	position:absolute;
 	left:50%;
 	bottom:0px;
-	width:100%;
-	max-width:1170px;
+	width: 95%;
 	text-align:right;
-	max-width:1340px;
 	transform:translateX(-50%);
 }
 

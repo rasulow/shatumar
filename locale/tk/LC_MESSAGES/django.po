@@ -2137,8 +2137,8 @@ msgstr "Görkez"
 msgid "count"
 msgstr "sany"
 
-msgid "New Product"
-msgstr "Täze haryt"
+msgid "fresh moments"
+msgstr "Ajaýyp pursatlar"
 
 msgid "mail"
 msgstr "Elektron poçta"
@@ -2173,3 +2173,13 @@ msgstr "Önümleriň giň görnüşi"
 
 msgid "clean text"
 msgstr "Arassa ýerler arassa aňlary döredýär - arassalaýyş önümiňiziň her damjasy has ýagty, sagdyn dünýä döredsin."
+
+
+msgid "brands"
+msgstr "Brendler"
+
+msgid "size"
+msgstr "Göwrümi"
+
+msgid "safe for your home"
+msgstr "Öýüňiz üçin howpsuz"

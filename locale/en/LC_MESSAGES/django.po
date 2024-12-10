@@ -2119,8 +2119,8 @@ msgid "Search"
 msgstr ""
 
 
-msgid "New Product"
-msgstr "New Product"
+msgid "fresh moments"
+msgstr "Fresh moments"
 
 
 msgid "Household chemicals"
@@ -2145,3 +2145,13 @@ msgstr "Wide product range"
 
 msgid "clean text"
 msgstr "Clean spaces spark clear minds – let every drop of your cleaning product create a brighter, healthier world."
+
+
+msgid "brands"
+msgstr "Brands"
+
+msgid "size"
+msgstr "Size"
+
+msgid "safe for your home"
+msgstr "Safe for your home"

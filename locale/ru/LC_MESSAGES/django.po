@@ -2138,8 +2138,8 @@ msgstr "Показать"
 msgid "count"
 msgstr "штук"
 
-msgid "New Product"
-msgstr "Новый продукт"
+msgid "fresh moments"
+msgstr "Свежие моменты"
 
 msgid "mail"
 msgstr "Электронная почта"
@@ -2174,3 +2174,14 @@ msgstr "Широкий ассортимент"
 
 msgid "clean text"
 msgstr "Чистые помещения пробуждают ясность ума – пусть каждая капля вашего чистящего средства создаст более яркий и здоровый мир."
+
+
+
+msgid "brands"
+msgstr "Бренды"
+
+msgid "size"
+msgstr "Объём"
+
+msgid "safe for your home"
+msgstr "Безопасно для вашего дома"

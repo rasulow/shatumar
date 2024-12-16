@@ -2073,11 +2073,7 @@
 	margin:0 auto;
 }
 
-.testimonial-block .image-column .image img{
-	position:relative;
-	overflow:hidden;
-	border-radius:50%;
-}
+
 
 .testimonial-block .arrow-layer{
 	position:absolute;
@@ -10185,3 +10181,31 @@ body {
 .brands {
 	height: 100px;
 }
+
+
+
+  
+@media (max-width: 600px) {
+video {
+	width: 100%;
+	height: auto;
+	max-width: 100vh;
+}
+}
+
+@media (max-width: 1000px) {
+video {
+	width: 100%;
+	height: auto;
+	max-width: 100vh;
+}
+}
+
+@media (max-width: 1400px) {
+video {
+	width: 100%;
+	height: auto;
+	max-width: 100vh;
+}
+}
+  

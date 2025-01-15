@@ -10,19 +10,19 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 SECRET_KEY = 'django-insecure-ulnw6(-=(b-p#++ndxjq96kds#8ld*mqh0aoang2@y$$+n&vbs'
 
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
 
 INSTALLED_APPS = [
-    'unfold',
-    'unfold.contrib.filters',
-    'unfold.contrib.forms',
-    'unfold.contrib.inlines',
-    'unfold.contrib.import_export',
-    'unfold.contrib.guardian',
-    'unfold.contrib.simple_history',
+    # 'unfold',
+    # 'unfold.contrib.filters',
+    # 'unfold.contrib.forms',
+    # 'unfold.contrib.inlines',
+    # 'unfold.contrib.import_export',
+    # 'unfold.contrib.guardian',
+    # 'unfold.contrib.simple_history',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -144,11 +144,11 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-UNFOLD = {
-    "SITE_TITLE": "Shatumar",
-    "SITE_HEADER": "Shatumar",
-    "SITE_ICON": {
-        "light": lambda request: static("images/shatumar.png"),
-        "dark": lambda request: static("images/shatumar.png"),
-    },
-}
+# UNFOLD = {
+#     "SITE_TITLE": "Shatumar",
+#     "SITE_HEADER": "Shatumar",
+#     "SITE_ICON": {
+#         "light": lambda request: static("images/shatumar.png"),
+#         "dark": lambda request: static("images/shatumar.png"),
+#     },
+# }

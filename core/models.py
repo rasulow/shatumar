@@ -22,24 +22,24 @@ class Category(models.Model):
             return f"{self.img.size / 1024:.2f} KB"
         return 0
     
-    def save(self, *args, **kwargs):
-        if self.img:
-            img = Image.open(self.img)
+    # def save(self, *args, **kwargs):
+    #     if self.img:
+    #         img = Image.open(self.img)
             
 
-            max_width = 1024
-            if img.width > max_width:
-                ratio = max_width / float(img.width)
-                new_height = int((float(img.height) * float(ratio)))
-                img = img.resize((max_width, new_height), Image.Resampling.LANCZOS)  # Updated resampling method
+    #         max_width = 1024
+    #         if img.width > max_width:
+    #             ratio = max_width / float(img.width)
+    #             new_height = int((float(img.height) * float(ratio)))
+    #             img = img.resize((max_width, new_height), Image.Resampling.LANCZOS)  # Updated resampling method
 
-            img_io = io.BytesIO()
-            img.save(img_io, format='png', quality=85)
-            img_content = ContentFile(img_io.getvalue(), self.img.name)
+    #         img_io = io.BytesIO()
+    #         img.save(img_io, format='png', quality=85)
+    #         img_content = ContentFile(img_io.getvalue(), self.img.name)
 
-            self.img.save(self.img.name, img_content, save=False)
+    #         self.img.save(self.img.name, img_content, save=False)
 
-        super().save(*args, **kwargs)
+    #     super().save(*args, **kwargs)
     
     def get_absolute_url(self):
         return reverse('category_detail', kwargs={'slug': self.slug})
@@ -136,23 +136,23 @@ class Banner(models.Model):
             return f"{self.img.size / 1024:.2f} KB"
         return 0
     
-    def save(self, *args, **kwargs):
-        if self.img:
-            img = Image.open(self.img)
+    # def save(self, *args, **kwargs):
+    #     if self.img:
+    #         img = Image.open(self.img)
 
-            max_width = 1024
-            if img.width > max_width:
-                ratio = max_width / float(img.width)
-                new_height = int((float(img.height) * float(ratio)))
-                img = img.resize((max_width, new_height), Image.Resampling.LANCZOS)  # Updated resampling method
+    #         max_width = 1024
+    #         if img.width > max_width:
+    #             ratio = max_width / float(img.width)
+    #             new_height = int((float(img.height) * float(ratio)))
+    #             img = img.resize((max_width, new_height), Image.Resampling.LANCZOS)  # Updated resampling method
 
-            img_io = io.BytesIO()
-            img.save(img_io, format='JPEG', quality=85)
-            img_content = ContentFile(img_io.getvalue(), self.img.name)
+    #         img_io = io.BytesIO()
+    #         img.save(img_io, format='JPEG', quality=85)
+    #         img_content = ContentFile(img_io.getvalue(), self.img.name)
 
-            self.img.save(self.img.name, img_content, save=False)
+    #         self.img.save(self.img.name, img_content, save=False)
 
-        super().save(*args, **kwargs)
+    #     super().save(*args, **kwargs)
     
     class Meta:
         verbose_name = 'Banner'
@@ -175,23 +175,23 @@ class Gallery(models.Model):
             return f"{self.img.size / 1024:.2f} KB"
         return 0
     
-    def save(self, *args, **kwargs):
-        if self.img:
-            img = Image.open(self.img)
+    # def save(self, *args, **kwargs):
+    #     if self.img:
+    #         img = Image.open(self.img)
 
-            max_width = 1024
-            if img.width > max_width:
-                ratio = max_width / float(img.width)
-                new_height = int((float(img.height) * float(ratio)))
-                img = img.resize((max_width, new_height), Image.Resampling.LANCZOS)  # Updated resampling method
+    #         max_width = 1024
+    #         if img.width > max_width:
+    #             ratio = max_width / float(img.width)
+    #             new_height = int((float(img.height) * float(ratio)))
+    #             img = img.resize((max_width, new_height), Image.Resampling.LANCZOS)  # Updated resampling method
 
-            img_io = io.BytesIO()
-            img.save(img_io, format='JPEG', quality=85)
-            img_content = ContentFile(img_io.getvalue(), self.img.name)
+    #         img_io = io.BytesIO()
+    #         img.save(img_io, format='JPEG', quality=85)
+    #         img_content = ContentFile(img_io.getvalue(), self.img.name)
 
-            self.img.save(self.img.name, img_content, save=False)
+    #         self.img.save(self.img.name, img_content, save=False)
 
-        super().save(*args, **kwargs)
+    #     super().save(*args, **kwargs)
     
     class Meta:
         verbose_name = 'Gallery'
@@ -215,23 +215,23 @@ class Certificates(models.Model):
             return f"{self.img.size / 1024:.2f} KB"
         return 0
     
-    def save(self, *args, **kwargs):
-        if self.img:
-            img = Image.open(self.img)
+    # def save(self, *args, **kwargs):
+    #     if self.img:
+    #         img = Image.open(self.img)
 
-            max_width = 1024
-            if img.width > max_width:
-                ratio = max_width / float(img.width)
-                new_height = int((float(img.height) * float(ratio)))
-                img = img.resize((max_width, new_height), Image.Resampling.LANCZOS)  # Updated resampling method
+    #         max_width = 1024
+    #         if img.width > max_width:
+    #             ratio = max_width / float(img.width)
+    #             new_height = int((float(img.height) * float(ratio)))
+    #             img = img.resize((max_width, new_height), Image.Resampling.LANCZOS)  # Updated resampling method
 
-            img_io = io.BytesIO()
-            img.save(img_io, format='JPEG', quality=85)
-            img_content = ContentFile(img_io.getvalue(), self.img.name)
+    #         img_io = io.BytesIO()
+    #         img.save(img_io, format='JPEG', quality=85)
+    #         img_content = ContentFile(img_io.getvalue(), self.img.name)
 
-            self.img.save(self.img.name, img_content, save=False)
+    #         self.img.save(self.img.name, img_content, save=False)
 
-        super().save(*args, **kwargs)
+    #     super().save(*args, **kwargs)
     
     class Meta:
         verbose_name = 'Certificate'

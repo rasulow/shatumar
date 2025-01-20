@@ -4,9 +4,11 @@ import os
 from django.templatetags.static import static
 from django.urls import reverse_lazy
 from django.utils.translation import gettext_lazy as _
+from PIL import Image
 
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+Image.MAX_IMAGE_PIXELS = None
 
 SECRET_KEY = 'django-insecure-ulnw6(-=(b-p#++ndxjq96kds#8ld*mqh0aoang2@y$$+n&vbs'
 

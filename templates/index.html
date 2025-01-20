@@ -164,9 +164,11 @@
 									<div class="product-block-four col-lg-3 col-md-6 col-sm-6">
 										<div class="inner-box d-flex align-items-center flex-wrap">
 											<div class="image">
-												<img src="{{ category.img.url }}" alt=""
-													style="width: 90px; height: 98px; object-fit: contain;"
-												/>
+												{% if category.img %}
+													<img src="{{ category.img.url }}" alt=""
+														style="width: 90px; height: 98px; object-fit: contain;"
+													/>
+												{% endif %}
 											</div>
 											<div class="content">
 												<h6><a href="{% url 'products' %}?category={{ category.slug }}">{{ category.name }}</a></h6>

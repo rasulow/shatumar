@@ -54,13 +54,8 @@
 					<div class="content-column col-lg-6 col-md-12 col-sm-12">
 						<div class="inner-column">
 							<h3>{{ product.name }}</h3>
-							
-							{% if product.description %}
-								<div class="text">{{ product.description }}</div>
-							{% else %}
-								<div class="text">Rorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</div>
-							{% endif %}
-							
+						
+							<div class="text">{{ product.description }}</div>
 							
 							<!-- Categories -->
 							<div class="categories"><span>Category :</span> {{ product.category }}</div>

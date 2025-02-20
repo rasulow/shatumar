@@ -2183,3 +2183,12 @@ msgstr "Göwrümi"
 
 msgid "safe for your home"
 msgstr "Öýüňiz üçin howpsuz"
+
+msgid "stay fresh, stay happy"
+msgstr "Täze boluň, bagtly boluň"
+
+msgid "eco-friendly"
+msgstr "Ekologiýa taýdan arassa"
+
+msgid "premium quality ingredients"
+msgstr "Premium hilli düzümler"

@@ -2185,3 +2185,12 @@ msgstr "Объём"
 
 msgid "safe for your home"
 msgstr "Безопасно для вашего дома"
+
+msgid "stay fresh, stay happy"
+msgstr "Оставайся свежим, оставайся счастливым"
+
+msgid "eco-friendly"
+msgstr "Экологичный"
+
+msgid "premium quality ingredients"
+msgstr "Ингредиенты премиального качества"

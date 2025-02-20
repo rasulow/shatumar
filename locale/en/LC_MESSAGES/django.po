@@ -2155,3 +2155,12 @@ msgstr "Size"
 
 msgid "safe for your home"
 msgstr "Safe for your home"
+
+msgid "stay fresh, stay happy"
+msgstr "Stay fresh, stay happy"
+
+msgid "eco-friendly"
+msgstr "Eco-friendly"
+
+msgid "premium quality ingredients"
+msgstr "Premium Quality Ingredients"

@@ -7733,11 +7733,11 @@
 .about-section .options li{
 	position:relative;
 	font-weight:400;
-	display:inline-block;
+	/*display:inline-block;*/
 	font-size:var(--font-16);
 	color:var(--color-twentyfive);
 	padding-left:var(--padding-left-45);
-	margin-right:var(--margin-right-50);
+	margin-right: 20px;
 	font-family: "Outfit", sans-serif;
 }
 

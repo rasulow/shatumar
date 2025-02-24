@@ -33,7 +33,7 @@
 									<div style="height: 50px;"></div>
 									<!-- <a href="shop-detail.html" class="shop-now"> </a> -->
 									<!-- Arrival Box -->
-									<a href="shop.html" class="arrival-box">{% trans 'fresh moments' %}</a>
+									<a href="" class="arrival-box">{% trans 'fresh moments' %}</a>
 									<!-- Arrival Box -->
 								</div>
 							</div>
@@ -142,54 +142,6 @@
 		</div>
 	</section>	
 	<!-- End Products Section -->
-	
-
-	<!-- Categories Section -->
-	<!-- 
-	<section class="products-section-two">
-		<div class="bottom-white-border"></div>
-		<div class="auto-container">
-
-			<div class="sec-title centered">
-				<h4><span>{% trans 'Categories' %}</span></h4>
-			</div>
-			<div class="inner-container">
-				<div class="single-item-carousel owl-carousel owl-theme">
-					{% for slide in categories %}
-
-						<div class="slide">
-							<div class="row clearfix">
-							
-								{% for category in slide %}
-									<div class="product-block-four col-lg-3 col-md-6 col-sm-6">
-										<div class="inner-box d-flex align-items-center flex-wrap">
-											<div class="image">
-												{% if category.img %}
-													<img src="{{ category.img.url }}" alt=""
-														style="width: 90px; height: 98px; object-fit: contain;"
-													/>
-												{% endif %}
-											</div>
-											<div class="content">
-												<h6><a href="{% url 'products' %}?category={{ category.slug }}">{{ category.name }}</a></h6>
-												<div class="total-products">{{ category.product_count }} {% trans 'count' %}</div>
-											</div>
-										</div>
-									</div>
-								{% endfor %}
-
-							</div>
-						</div>
-					{% endfor %}
-					
-					
-				</div>
-				
-			</div>
-		</div>
-	</section>
-	-->
-	<!-- End Products Section Two -->
 
 
 	<!-- Video -->

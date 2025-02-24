@@ -32,7 +32,7 @@ class IndexView(TemplateView):
                                             models.ProductImage.objects.filter(product=OuterRef('id'))
                                             .values('img')[:1]
                                         )
-                                    ),
+                                    )[:10],
                                     timeout=300)
         context['products'] = products
         context['products_count'] = products.count()

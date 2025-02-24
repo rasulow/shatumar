@@ -23,10 +23,14 @@
                         <div class="navbar-collapse collapse clearfix" id="navbarSupportedContent">
                             <ul class="navigation clearfix">
                                 <!-- color:var(--main-color); -->
-                                <li><a href="{% url 'index' %}" >{% trans "Home" %}</a></li>
-                                <li><a href="{% url 'about' %}" style="{% if request.path == '/about/' %}color:var(--main-color);{% endif %}">{% trans "About" %}</a></li>
-                                <li><a href="{% url 'products' %}" style="{% if request.path == '/products/' %}color:var(--main-color);{% endif %}">{% trans "Products" %}</a></li>
-                                <li><a href="{% url 'contact' %}" style="{% if request.path == '/contact/' %}color:var(--main-color);{% endif %}">{% trans "Contact us" %}</a></li>
+                                <li><a href="{% url 'index' %}" 
+                                    style="
+                                        {% if 'about' in request.path or 'contact' in request.path or 'about' in request.path or 'products' in request.path %}
+                                            color:black;
+                                        {% endif %}">{% trans "Home" %}</a></li>
+                                <li><a href="{% url 'about' %}" style="{% if 'about' in request.path %}color:var(--main-color);{% endif %}">{% trans "About" %}</a></li>
+                                <li><a href="{% url 'products' %}" style="{% if 'products' in request.path %}color:var(--main-color);{% endif %}">{% trans "Products" %}</a></li>
+                                <li><a href="{% url 'contact' %}" style="{% if 'contact' in request.path %}color:var(--main-color);{% endif %}">{% trans "Contact us" %}</a></li>
                                 
                             </ul>
                         </div>

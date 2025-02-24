@@ -10,6 +10,8 @@ class CategoryAdmin(ModelAdmin):
     search_fields = ('name', 'slug')
     prepopulated_fields = {'slug': ('name',)}
     readonly_fields = ('created_at', 'updated_at')
+    list_per_page = 10
+    show_full_result_count = True
     
     def formatted_created_at(self, obj):
         return obj.created_at.strftime('%d.%m.%Y %H:%M')
@@ -33,6 +35,8 @@ class ProductAdmin(ModelAdmin):
     prepopulated_fields = {'slug': ('name',)}
     list_filter = ('available', 'category', 'brand')
     readonly_fields = ('created_at', 'updated_at')
+    list_per_page = 10
+    show_full_result_count = True
 
     def formatted_created_at(self, obj):
         return obj.created_at.strftime('%d.%m.%Y %H:%M')
@@ -48,6 +52,8 @@ class BrandAdmin(ModelAdmin):
     list_display = ('name', 'formatted_created_at', 'formatted_updated_at')
     search_fields = ('name',)
     readonly_fields = ('created_at', 'updated_at')
+    list_per_page = 10
+    show_full_result_count = True
 
     def formatted_created_at(self, obj):
         return obj.created_at.strftime('%d.%m.%Y %H:%M')
@@ -63,6 +69,8 @@ class ProductSizeAdmin(ModelAdmin):
     list_display = ('size', 'formatted_created_at', 'formatted_updated_at')
     search_fields = ('size',)
     readonly_fields = ('created_at', 'updated_at')
+    list_per_page = 10
+    show_full_result_count = True
 
     def formatted_created_at(self, obj):
         return obj.created_at.strftime('%d.%m.%Y %H:%M')
@@ -78,6 +86,8 @@ class BannerAdmin(ModelAdmin):
     list_display = ('title', 'img', 'description', 'is_active', 'img_size', 'formatted_created_at', 'formatted_updated_at')
     search_fields = ('title',)
     readonly_fields = ('created_at', 'updated_at')
+    list_per_page = 10
+    show_full_result_count = True
 
     def formatted_created_at(self, obj):
         return obj.created_at.strftime('%d.%m.%Y %H:%M')
@@ -93,6 +103,8 @@ class GalleryAdmin(ModelAdmin):
     list_display = ('title', 'img', 'img_size', 'is_active', 'formatted_created_at', 'formatted_updated_at')
     search_fields = ('title',)
     readonly_fields = ('created_at', 'updated_at')
+    list_per_page = 10
+    show_full_result_count = True
 
     def formatted_created_at(self, obj):
         return obj.created_at.strftime('%d.%m.%Y %H:%M')
@@ -108,6 +120,8 @@ class CertificatesAdmin(ModelAdmin):
     list_display = ('title', 'img', 'img_size', 'is_active', 'formatted_created_at', 'formatted_updated_at')
     search_fields = ('title',)
     readonly_fields = ('created_at', 'updated_at')
+    list_per_page = 10
+    show_full_result_count = True
 
     def formatted_created_at(self, obj):
         return obj.created_at.strftime('%d.%m.%Y %H:%M')

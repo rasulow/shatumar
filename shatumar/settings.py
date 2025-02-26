@@ -1,5 +1,7 @@
 from pathlib import Path
 import os
+import logging
+from logstash_formatter import LogstashFormatterV1
 
 from django.templatetags.static import static
 from django.urls import reverse_lazy
@@ -113,6 +115,32 @@ CACHES = {
 SESSION_ENGINE = "django.contrib.sessions.backends.cache"
 SESSION_CACHE_ALIAS = "default"
 
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'handlers': {
+        'elasticsearch': {
+            'level': 'DEBUG',
+            'class': 'logging.handlers.HTTPHandler',
+            'formatter': 'json',
+            'url': 'http://localhost:9200/_bulk',
+            'method': 'POST',
+        },
+    },
+    'loggers': {
+        'django': {
+            'handlers': ['elasticsearch'],
+            'level': 'DEBUG',
+            'propagate': True,
+        },
+    },
+    'formatters': {
+        'json': {
+            '()': LogstashFormatterV1,
+        },
+    },
+}
 
 LANGUAGE_CODE = 'en'
 

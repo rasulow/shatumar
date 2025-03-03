@@ -14,7 +14,7 @@ Image.MAX_IMAGE_PIXELS = None
 
 SECRET_KEY = 'django-insecure-ulnw6(-=(b-p#++ndxjq96kds#8ld*mqh0aoang2@y$$+n&vbs'
 
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
